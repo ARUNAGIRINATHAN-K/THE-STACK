@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE STACK — Living IT Company Map</title>
+  <style>
+    :root {
+      --bg: #0a0f1f;
+      --panel: rgba(16, 22, 44, 0.95);
+      --panel2: rgba(24, 31, 57, 0.95);
+      --text: #eaf1ff;
+      --muted: #9bb0d6;
+      --accent: #67d7ff;
+      --good: #58d47a;
+      --warn: #ffca55;
+      --bad: #ff6e6e;
+      --floorLine: #203058;
+      --building: #101828;
+      --focus: #6cf3ff;
+    }
+    body.light {
+      --bg: #ecf2ff;
+      --panel: rgba(255, 255, 255, 0.94);
+      --panel2: rgba(241, 246, 255, 0.96);
+      --text: #14203b;
+      --muted: #4e628f;
+      --accent: #0d6efd;
+      --good: #22863a;
+      --warn: #a07400;
+      --bad: #c53939;
+      --floorLine: #c7d8f7;
+      --building: #d7e5ff;
+      --focus: #0057ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow: hidden;
+    }
+    canvas { display: block; width: 100vw; height: 100vh; }
+    .ui, .overlay { position: fixed; inset: 0; pointer-events: none; }
+    .topbar, .bottombar, .sidebar, .infopanel, .toasts, .controls, .modal, .tour {
+      pointer-events: auto;
+    }
+    .topbar {
+      position: absolute; left: 8px; right: 8px; top: 8px;
+      display: grid; grid-template-columns: 260px 1fr auto auto auto auto auto; gap: 8px;
+      background: var(--panel); padding: 8px 10px; border-radius: 12px; border: 1px solid var(--floorLine);
+      align-items: center;
+    }
+    .title h1 { margin: 0; font-size: 16px; letter-spacing: 1px; }
+    .title small { color: var(--muted); }
+    .search { width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--floorLine); background: var(--panel2); color: var(--text); }
+    button, .btn {
+      border: 1px solid var(--floorLine); background: var(--panel2); color: var(--text);
+      border-radius: 8px; padding: 8px 10px; cursor: pointer;
+    }
+    .glow { box-shadow: 0 0 14px rgba(103, 215, 255, 0.45); border-color: var(--accent); }
+    .bottombar {
+      position: absolute; left: 8px; right: 8px; bottom: 8px;
+      background: var(--panel); border: 1px solid var(--floorLine); border-radius: 12px;
+      display: grid; grid-template-columns: 1fr auto auto auto; align-items: center; gap: 8px;
+      padding: 8px 10px;
+    }
+    .timeline { display: flex; gap: 8px; align-items: center; }
+    .timeline input { width: min(500px, 42vw); }
+    .sidebar {
+      position: absolute; top: 84px; left: 8px; width: 220px; max-height: calc(100vh - 190px); overflow: auto;
+      background: var(--panel); border: 1px solid var(--floorLine); border-radius: 12px; padding: 8px;
+    }
+    .sidebar h3 { margin: 6px; font-size: 13px; color: var(--muted); }
+    .floor-item { display: flex; justify-content: space-between; align-items: center; padding: 7px; margin: 4px 0; border-radius: 8px; cursor: pointer; background: var(--panel2); }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); }
+    .infopanel {
+      position: absolute; right: 8px; top: 84px; bottom: 68px; width: min(430px, 90vw);
+      transform: translateX(105%); transition: transform .35s ease;
+      background: var(--panel); border: 1px solid var(--floorLine); border-radius: 12px; padding: 10px; overflow: auto;
+    }
+    .infopanel.open { transform: translateX(0); }
+    .infopanel h2 { margin: 2px 0 8px; }
+    .chip { display: inline-block; background: rgba(103,215,255,.18); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 8px; margin: 2px; font-size: 12px; }
+    .toasts { position: absolute; top: 76px; right: 12px; width: 280px; display: flex; flex-direction: column; gap: 6px; }
+    .toast { background: var(--panel); border: 1px solid var(--floorLine); border-left: 4px solid var(--accent); border-radius: 8px; padding: 8px; font-size: 13px; }
+    .toast.bad { border-left-color: var(--bad); } .toast.good { border-left-color: var(--good); } .toast.warn { border-left-color: var(--warn); }
+    .minimap { position: absolute; right: 12px; bottom: 76px; width: 150px; height: 100px; border-radius: 8px; border: 1px solid var(--floorLine); background: var(--panel); }
+    .footer { position: absolute; left: 50%; transform: translateX(-50%); bottom: 44px; color: var(--muted); font-size: 12px; }
+    .modal { position: absolute; inset: 40px; background: var(--panel); border: 1px solid var(--floorLine); border-radius: 12px; display: none; padding: 14px; overflow: auto; }
+    .modal.open { display: block; }
+    .tour { position: absolute; inset: 0; display: none; background: rgba(4,8,14,.55); }
+    .tour.open { display: block; }
+    .tour-card { width: min(460px, 88vw); margin: 14vh auto; background: var(--panel); border: 1px solid var(--floorLine); border-radius: 12px; padding: 14px; }
+    .terminal { background: #030303; color: #6efc9c; padding: 8px; border-radius: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <canvas id="scene" aria-label="THE STACK canvas"></canvas>
+  <div class="ui">
+    <div class="topbar">
+      <div class="title"><h1>THE STACK</h1><small>How a tech company really works</small></div>
+      <input id="searchInput" class="search" placeholder="Search tech terms..." aria-label="Search terms" />
+      <button id="modeBtn" aria-label="Toggle dark and light mode">🌙/☀️</button>
+      <button id="cbBtn" aria-label="Toggle color blind mode">Colorblind</button>
+      <button id="beginnerBtn" aria-label="Toggle beginner mode">Beginner</button>
+      <button id="liveBtn" aria-label="Toggle live simulation">GO LIVE</button>
+      <button id="sendBtn" class="glow" aria-label="Send animated request">SEND REQUEST</button>
+    </div>
+    <div class="sidebar" id="sidebar" aria-label="Floor guide"></div>
+    <div class="toasts" id="toasts"></div>
+    <canvas id="minimap" class="minimap" width="150" height="100" aria-label="Minimap"></canvas>
+    <div class="infopanel" id="infoPanel" aria-label="Info panel"></div>
+    <div class="bottombar">
+      <div class="timeline">Company Timeline (Year <span id="yearOut">5</span>) <input id="yearSlider" type="range" min="1" max="10" value="5" aria-label="Company timeline" /></div>
+      <div id="zoomOut">Zoom: 1.00x</div>
+      <button id="resetBtn">Reset View</button>
+      <div id="countOut">0 elements — click to explore</div>
+    </div>
+    <div class="footer">Built with curiosity — explore, learn, build</div>
+    <div class="controls" style="position:absolute;right:176px;bottom:76px;display:flex;gap:6px;">
+      <button data-modal="incident">Incident Simulator</button><button data-modal="career">Career Paths</button><button data-modal="radar">Tech Radar</button><button data-modal="glossary">Glossary</button>
+    </div>
+  </div>
+
+  <div class="overlay">
+    <div id="incident" class="modal"><h2>Incident Simulator</h2><p>Flow: Alert → On-call → Diagnose → Hotfix → Deploy → Post-mortem.</p><p>Choose: rollback fast or patch live? (educational scenario).</p><button data-close>Close</button></div>
+    <div id="career" class="modal"><h2>Career Paths</h2><p>Click roles in the scene to learn daily work, skills, salary bands, and progression.</p><button data-close>Close</button></div>
+    <div id="radar" class="modal"><h2>Tech Radar</h2><canvas id="radarCanvas" width="620" height="360"></canvas><button data-close>Close</button></div>
+    <div id="glossary" class="modal"><h2>Glossary A–Z</h2><input id="glossarySearch" class="search" placeholder="Filter term..."/><div id="glossaryList"></div><button data-close>Close</button></div>
+    <div id="tour" class="tour"><div class="tour-card"><h3>Welcome to THE STACK</h3><p id="tourText"></p><button id="tourNext">Next</button><button id="tourSkip">Skip</button></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script>
+    /* ContentLibrary: educational content for all key elements. */
+    const ContentLibrary = {
+      beginner: true,
+      lib: {
+        "server-rack": {name:"Server Rack", floor:0, what:"A cabinet full of servers.", why:"Runs apps and stores services.", how:"Power, cooling, and networking keep many machines operating together.", tools:["Dell", "HPE", "Supermicro"], links:["https://en.wikipedia.org/wiki/Server_(computing)"]},
+        "ups-power": {name:"UPS Power", floor:0, what:"Battery backup system.", why:"Prevents outages during power dips.", how:"Inverters switch to battery instantly until generator takeover.", tools:["APC", "Eaton"], links:["https://en.wikipedia.org/wiki/Uninterruptible_power_supply"]},
+        "cooling-system": {name:"Cooling System", floor:0, what:"Controls datacenter temperature.", why:"Heat can damage hardware.", how:"CRAC units move chilled air through hot aisles.", tools:["Liebert"], links:["https://en.wikipedia.org/wiki/Data_center#Cooling"]},
+        "network-cable": {name:"Physical Network Cable", floor:0, what:"Fiber/copper links.", why:"Connects devices physically.", how:"Carries packets up the stack at high bandwidth.", tools:["Cat6", "Fiber"], links:["https://developer.mozilla.org/"]},
+        "colo-vs-own": {name:"Colocation vs Own DC", floor:0, what:"Rent rack space or own facility.", why:"Tradeoffs in capex/control/speed.", how:"Hybrid strategies are common at scale.", tools:["Equinix"], links:["https://en.wikipedia.org/wiki/Colocation_centre"]},
+        "router": {name:"Router", floor:1, what:"Traffic director between networks.", why:"Gets packets to destination.", how:"Uses routing tables and protocols like BGP/OSPF.", tools:["Cisco", "Juniper"], links:["https://en.wikipedia.org/wiki/Router_(computing)"]},
+        "switch": {name:"Switch", floor:1, what:"Connects devices in a LAN.", why:"Fast local communication.", how:"MAC address tables forward frames.", tools:["Arista"], links:["https://en.wikipedia.org/wiki/Network_switch"]},
+        "firewall": {name:"Firewall", floor:1, what:"Security gate for traffic.", why:"Blocks malicious traffic.", how:"Rules inspect packet headers/state/content.", tools:["Palo Alto"], links:["https://en.wikipedia.org/wiki/Firewall_(computing)"]},
+        "load-balancer": {name:"Load Balancer", floor:1, what:"Spreads requests across servers.", why:"Prevents overload and improves uptime.", how:"Algorithms (round robin/least conn) choose backend.", tools:["NGINX", "HAProxy"], links:["https://en.wikipedia.org/wiki/Load_balancing_(computing)"]},
+        "dns": {name:"DNS Server", floor:1, what:"Internet phonebook.", why:"Human names to IPs.", how:"Recursive/authoritative lookups return records.", tools:["Route53", "Cloudflare DNS"], links:["https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name"]},
+        "cdn-node": {name:"CDN Node", floor:10, what:"Edge cache near users.", why:"Lower latency.", how:"Caches static content globally.", tools:["Cloudflare", "Akamai"], links:["https://en.wikipedia.org/wiki/Content_delivery_network"]},
+        "vpn": {name:"VPN Gateway", floor:1, what:"Encrypted tunnel endpoint.", why:"Secure remote access.", how:"IPSec/OpenVPN tunnels private traffic.", tools:["WireGuard"], links:["https://en.wikipedia.org/wiki/Virtual_private_network"]},
+        "tls-cert": {name:"SSL/TLS Certificate", floor:1, what:"Identity for HTTPS.", why:"Encrypts and authenticates.", how:"Public key cryptography validates servers.", tools:["Let's Encrypt"], links:["https://developer.mozilla.org/en-US/docs/Web/Security"]},
+        "docker": {name:"Docker Container", floor:2, what:"Packaged app runtime.", why:"Consistent deployments.", how:"Images + namespaces + cgroups isolate processes.", tools:["Docker"], links:["https://www.docker.com/resources/what-container/"]},
+        "k8s": {name:"Kubernetes Pod", floor:2, what:"Smallest deploy unit in K8s.", why:"Scales and heals apps.", how:"Scheduler places pods; controllers reconcile state.", tools:["EKS", "GKE"], links:["https://kubernetes.io/docs/concepts/workloads/pods/"]},
+        "cicd": {name:"CI/CD Pipeline", floor:2, what:"Automated build-test-deploy flow.", why:"Faster safer releases.", how:"Triggers from commits run staged jobs.", tools:["GitHub Actions", "Jenkins"], links:["https://en.wikipedia.org/wiki/CI/CD"]},
+        "git": {name:"Git Repository", floor:2, what:"Version history of code.", why:"Team collaboration and rollback.", how:"Commits/branches/merges capture change lineage.", tools:["GitHub", "GitLab"], links:["https://git-scm.com/docs"]},
+        "artifact": {name:"Artifact Registry", floor:2, what:"Stores build outputs.", why:"Reliable deploy inputs.", how:"Versioned images/packages with access controls.", tools:["ECR", "Nexus"], links:["https://en.wikipedia.org/wiki/Package_manager"]},
+        "iac": {name:"Infrastructure as Code", floor:2, what:"Infra definitions in code.", why:"Repeatable environments.", how:"Declarative plans converge infra state.", tools:["Terraform"], links:["https://developer.hashicorp.com/terraform/docs"]},
+        "rest": {name:"REST API", floor:3, what:"Resource-based HTTP interface.", why:"Inter-service communication.", how:"Methods + JSON + status codes.", tools:["Express", "FastAPI"], links:["https://developer.mozilla.org/en-US/docs/Glossary/REST"]},
+        "graphql": {name:"GraphQL", floor:3, what:"Query language for APIs.", why:"Clients request exact fields.", how:"Schema + resolvers form execution graph.", tools:["Apollo"], links:["https://graphql.org/learn/"]},
+        "microservice": {name:"Microservice", floor:3, what:"Small autonomous service.", why:"Independent scaling and ownership.", how:"Bounded contexts communicate via APIs/events.", tools:["Spring Boot"], links:["https://martinfowler.com/microservices/"]},
+        "queue": {name:"Message Queue", floor:3, what:"Async task broker.", why:"Decouples producers/consumers.", how:"Durable queues and consumers handle bursts.", tools:["Kafka", "RabbitMQ"], links:["https://en.wikipedia.org/wiki/Message_queue"]},
+        "sql": {name:"SQL Database", floor:3, what:"Relational data engine.", why:"Transactions and consistency.", how:"Tables, indexes, ACID, query planner.", tools:["PostgreSQL"], links:["https://www.postgresql.org/docs/"]},
+        "nosql": {name:"NoSQL Database", floor:3, what:"Flexible schema datastore.", why:"Scale for specific workloads.", how:"Document/key-value/time-series models.", tools:["MongoDB"], links:["https://en.wikipedia.org/wiki/NoSQL"]},
+        "redis": {name:"Cache (Redis)", floor:3, what:"In-memory key-value store.", why:"Reduces DB load.", how:"Stores hot data with TTL and pub/sub.", tools:["Redis"], links:["https://redis.io/docs/"]},
+        "api-gw": {name:"API Gateway", floor:3, what:"Single ingress for APIs.", why:"Central auth, routing, rate limits.", how:"Proxy policies apply before backend.", tools:["Kong", "Apigee"], links:["https://en.wikipedia.org/wiki/API_management"]},
+        "react": {name:"React Component", floor:4, what:"Reusable UI unit.", why:"Composable frontend architecture.", how:"State + props drive virtual DOM updates.", tools:["React"], links:["https://react.dev/learn"]},
+        "css-grid": {name:"CSS Grid", floor:4, what:"2D layout system.", why:"Responsive structured UI.", how:"Define rows/columns and place items.", tools:["CSS"], links:["https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"]},
+        "devtools": {name:"Browser DevTools", floor:4, what:"Built-in debugging suite.", why:"Inspect perf/network/layout.", how:"Panels profile runtime behavior.", tools:["Chrome DevTools"], links:["https://developer.chrome.com/docs/devtools/"]},
+        "responsive": {name:"Responsive Design", floor:4, what:"UI adapts by viewport.", why:"Great experience on all devices.", how:"Media queries and fluid sizing.", tools:["Figma"], links:["https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"]},
+        "webperf": {name:"Web Performance", floor:4, what:"Speed and smoothness metrics.", why:"User experience and SEO.", how:"Optimize bundle, rendering, caching.", tools:["Lighthouse"], links:["https://web.dev/performance/"]},
+        "pwa": {name:"PWA", floor:4, what:"Installable web app.", why:"Offline + app-like UX.", how:"Service worker caches resources.", tools:["Workbox"], links:["https://web.dev/progressive-web-apps/"]},
+        "siem": {name:"SIEM", floor:6, what:"Central security log analytics.", why:"Detect and investigate threats.", how:"Correlates events and alerts analysts.", tools:["Splunk"], links:["https://en.wikipedia.org/wiki/Security_information_and_event_management"]},
+        "pentest": {name:"Penetration Testing", floor:6, what:"Authorized attack simulation.", why:"Find weaknesses proactively.", how:"Recon, exploit, report, retest.", tools:["Burp Suite"], links:["https://owasp.org/"]},
+        "zero-trust": {name:"Zero Trust", floor:6, what:"Never trust, always verify.", why:"Limits lateral movement.", how:"Continuous authz/authn and least privilege.", tools:["Okta"], links:["https://www.nist.gov/publications/zero-trust-architecture"]},
+        "oauth": {name:"OAuth2 / JWT", floor:6, what:"Delegated auth and tokens.", why:"Secure identity flows.", how:"Access tokens carry signed claims.", tools:["Auth0"], links:["https://oauth.net/2/"]},
+        "ddos": {name:"DDoS Protection", floor:6, what:"Traffic flood defense.", why:"Preserves availability.", how:"Scrubbing centers and rate limiting block attacks.", tools:["Cloudflare"], links:["https://en.wikipedia.org/wiki/Denial-of-service_attack"]},
+        "vulnscan": {name:"Vulnerability Scanner", floor:6, what:"Automated weakness finder.", why:"Catch known CVEs.", how:"Scans packages, hosts, configs.", tools:["Nessus"], links:["https://owasp.org/www-community/Vulnerability_Scanning_Tools"]},
+        "scrum": {name:"Scrum Sprint", floor:7, what:"Time-boxed delivery cycle.", why:"Frequent value delivery.", how:"Plan, build, review, retro.", tools:["Jira"], links:["https://scrumguides.org/"]},
+        "kanban": {name:"Kanban Board", floor:7, what:"Flow-based work board.", why:"Visualizes bottlenecks.", how:"Cards move To Do → Doing → Done.", tools:["Trello"], links:["https://en.wikipedia.org/wiki/Kanban_board"]},
+        "code-review": {name:"Code Review", floor:7, what:"Peer check before merge.", why:"Quality + knowledge sharing.", how:"Review comments + approval gate.", tools:["GitHub PR"], links:["https://google.github.io/eng-practices/review/"]},
+        "incident": {name:"Incident Response", floor:7, what:"Coordinated outage handling.", why:"Minimize impact and restore service.", how:"Detect, triage, mitigate, communicate.", tools:["PagerDuty"], links:["https://sre.google/sre-book/managing-incidents/"]},
+        "postmortem": {name:"Post-Mortem", floor:7, what:"Blameless incident analysis.", why:"Prevent repeats.", how:"Timeline, root cause, action items.", tools:["Docs"], links:["https://sre.google/workbook/postmortem-culture/"]},
+        "slo": {name:"SLA/SLO/SLI", floor:7, what:"Reliability targets and metrics.", why:"Aligns engineering and business.", how:"Define error budget and service promises.", tools:["Datadog"], links:["https://sre.google/sre-book/service-level-objectives/"]},
+        "pipeline": {name:"Data Pipeline", floor:8, what:"Flow from source to analytics.", why:"Trusted timely data.", how:"Extract-transform-load in stages.", tools:["Airflow"], links:["https://en.wikipedia.org/wiki/Data_pipeline"]},
+        "warehouse": {name:"Data Warehouse", floor:8, what:"Central analytics store.", why:"Fast business intelligence queries.", how:"Columnar storage and star schemas.", tools:["Snowflake"], links:["https://en.wikipedia.org/wiki/Data_warehouse"]},
+        "mltrain": {name:"ML Model Training", floor:8, what:"Model learns from data.", why:"Predictions/automation.", how:"Features + objective + optimization loop.", tools:["PyTorch"], links:["https://developers.google.com/machine-learning/crash-course"]},
+        "abtest": {name:"A/B Testing", floor:4, what:"Compare two variants.", why:"Data-driven product decisions.", how:"Randomize users and evaluate metrics.", tools:["Optimizely"], links:["https://en.wikipedia.org/wiki/A/B_testing"]},
+        "analytics": {name:"Analytics Dashboard", floor:8, what:"Live KPI visualization.", why:"Measure outcomes.", how:"Queries feed charts and alerts.", tools:["Looker"], links:["https://en.wikipedia.org/wiki/Business_intelligence_software"]}
+      }
+    };
+
+    /* SceneBuilder: define floors/elements and build search index. */
+    class SceneBuilder {
+      constructor(content) { this.content = content; this.floorHeight = 280; this.width = 1800; this.elements = []; this.floors=[]; this.build(); }
+      build(){
+        const names=["Underground","Network","Cloud & DevOps","Backend Engineering","Frontend & Design","QA & Testing","SOC","Product & PM","Data & Analytics","C-Suite","Rooftop"];
+        names.forEach((n,i)=>{ this.floors.push({id:i,name:n,y: (10-i)*this.floorHeight, status:"good"}); });
+        const entries = Object.entries(this.content.lib);
+        entries.forEach(([id,v],i)=>{
+          const floor = v.floor;
+          this.elements.push({id, name:v.name, floor, x:150 + (i%6)*260, y:(10-floor)*this.floorHeight + 70 + (Math.floor(i/6)%3)*65, w:170, h:46, pulse:0, clicks:0});
+        });
+        // characters and extras
+        this.elements.push({id:"rubber-duck",name:"Rubber Duck",floor:3,x:1070,y:(10-3)*this.floorHeight+210,w:24,h:24,duck:true});
+        this.elements.push({id:"ceo",name:"CEO",floor:9,x:940,y:(10-9)*this.floorHeight+120,w:80,h:40});
+        this.elements.push({id:"terminal",name:"Hidden Terminal",floor:6,x:1330,y:(10-6)*this.floorHeight+170,w:120,h:70});
+      }
+    }
+
+    /* CanvasEngine: render world, manage zoom/pan/culling and minimap. */
+    class CanvasEngine {
+      constructor(scene){
+        this.scene=scene; this.canvas=document.getElementById("scene"); this.ctx=this.canvas.getContext("2d");
+        this.minimap=document.getElementById("minimap"); this.mctx=this.minimap.getContext("2d");
+        this.scale=1; this.minScale=.3; this.maxScale=3; this.tx=160; this.ty=-1800; this.vx=0; this.vy=0;
+        this.resize(); window.addEventListener("resize",()=>this.resize());
+      }
+      resize(){ this.canvas.width=innerWidth; this.canvas.height=innerHeight; }
+      worldToScreen(x,y){ return {x:x*this.scale+this.tx, y:y*this.scale+this.ty}; }
+      screenToWorld(x,y){ return {x:(x-this.tx)/this.scale, y:(y-this.ty)/this.scale}; }
+      flyTo(x,y,s=1.2){ gsap.to(this,{duration:1, tx:innerWidth/2 - x*s, ty:innerHeight/2 - y*s, scale:s, ease:"power2.out"}); }
+      update(){ this.tx += this.vx; this.ty += this.vy; this.vx*=.91; this.vy*=.91; }
+      draw(highlightId, packet){
+        const c=this.ctx; c.clearRect(0,0,this.canvas.width,this.canvas.height);
+        c.save(); c.translate(this.tx,this.ty); c.scale(this.scale,this.scale);
+        c.fillStyle=getComputedStyle(document.body).getPropertyValue("--building"); c.fillRect(60,30,this.scene.width, this.scene.floorHeight*11+80);
+        this.scene.floors.forEach(f=>{
+          const y=f.y; c.strokeStyle=getComputedStyle(document.body).getPropertyValue("--floorLine"); c.beginPath(); c.moveTo(60,y); c.lineTo(this.scene.width+60,y); c.stroke();
+          c.fillStyle="rgba(80,130,255,.06)"; c.fillRect(60,y,this.scene.width,this.scene.floorHeight);
+          c.fillStyle=getComputedStyle(document.body).getPropertyValue("--muted"); c.fillText(`F${10-f.id} ${f.name}`,80,y+20);
+        });
+        this.scene.elements.forEach(el=>{
+          if(el.x+el.w < -this.tx/this.scale-50 || el.x > (-this.tx+this.canvas.width)/this.scale+50) return;
+          const isHi = highlightId===el.id; const p = (Math.sin(performance.now()/400 + el.x*.01)+1)/2;
+          c.fillStyle = isHi?"rgba(108,243,255,.9)":"rgba(38,58,110,.95)"; c.fillRect(el.x,el.y,el.w,el.h);
+          c.strokeStyle = isHi?"#fff":"rgba(103,215,255,.6)"; c.strokeRect(el.x,el.y,el.w,el.h);
+          c.fillStyle="#dce8ff"; c.fillText(el.name, el.x+6, el.y+26);
+          c.fillStyle=`rgba(90,255,140,${.2+p*.6})`; c.fillRect(el.x+el.w-16,el.y+6,8,8);
+          if(el.id==="terminal") { c.fillStyle="#111"; c.fillRect(el.x+8,el.y+12,42,24); }
+        });
+        // packet
+        if(packet.active){ c.beginPath(); c.fillStyle="#ffd857"; c.arc(packet.x,packet.y,8,0,Math.PI*2); c.fill(); }
+        c.restore();
+        this.drawMini();
+        document.getElementById("zoomOut").textContent=`Zoom: ${this.scale.toFixed(2)}x`;
+      }
+      drawMini(){
+        const m=this.mctx; m.clearRect(0,0,150,100); m.fillStyle="#0f1630"; m.fillRect(0,0,150,100);
+        const worldW=this.scene.width+120, worldH=this.scene.floorHeight*11+120, sx=150/worldW, sy=100/worldH;
+        m.fillStyle="#234"; m.fillRect(10,5,this.scene.width*sx,this.scene.floorHeight*11*sy);
+        const vx=(-this.tx/this.scale)*sx+10, vy=(-this.ty/this.scale)*sy+5, vw=(innerWidth/this.scale)*sx, vh=(innerHeight/this.scale)*sy;
+        m.strokeStyle="#55c8ff"; m.strokeRect(vx,vy,vw,vh);
+      }
+    }
+
+    /* AnimationManager: centralized micro-animations and motion state. */
+    class AnimationManager {
+      constructor(scene){ this.scene=scene; this.t=0; }
+      tick(){
+        this.t += 0.016;
+        this.scene.elements.forEach((el,i)=>{ el.pulse = (Math.sin(this.t*2 + i*0.4)+1)/2; });
+      }
+    }
+
+    /* InteractionHandler: pointer/touch/keyboard + picking. */
+    class InteractionHandler {
+      constructor(engine,scene,onPick){ this.e=engine; this.s=scene; this.onPick=onPick; this.bind(); }
+      bind(){
+        let dragging=false,last={x:0,y:0};
+        scene.addEventListener("pointerdown",e=>{dragging=true; last={x:e.clientX,y:e.clientY};});
+        window.addEventListener("pointermove",e=>{ if(!dragging) return; this.e.vx=e.clientX-last.x; this.e.vy=e.clientY-last.y; this.e.tx+=this.e.vx; this.e.ty+=this.e.vy; last={x:e.clientX,y:e.clientY};});
+        window.addEventListener("pointerup",e=>{ if(!dragging){return;} dragging=false; const w=this.e.screenToWorld(e.clientX,e.clientY); const hit=this.s.elements.find(el=>w.x>=el.x&&w.x<=el.x+el.w&&w.y>=el.y&&w.y<=el.y+el.h); if(hit) this.onPick(hit);});
+        scene.addEventListener("wheel",e=>{e.preventDefault(); const ds=e.deltaY<0?1.1:.9; const ns=Math.min(this.e.maxScale,Math.max(this.e.minScale,this.e.scale*ds)); const wx=(e.clientX-this.e.tx)/this.e.scale, wy=(e.clientY-this.e.ty)/this.e.scale; this.e.scale=ns; this.e.tx=e.clientX-wx*ns; this.e.ty=e.clientY-wy*ns;},{passive:false});
+        window.addEventListener("keydown",e=>{ if(e.key==="ArrowUp") this.e.ty+=35; if(e.key==="ArrowDown") this.e.ty-=35; if(e.key==="ArrowLeft") this.e.tx+=35; if(e.key==="ArrowRight") this.e.tx-=35; if(e.key==="+") this.e.scale=Math.min(3,this.e.scale*1.1); if(e.key==="-") this.e.scale=Math.max(.3,this.e.scale*.9); });
+        document.getElementById("minimap").addEventListener("click",e=>{ const r=e.target.getBoundingClientRect(); const px=(e.clientX-r.left)/150, py=(e.clientY-r.top)/100; const x=px*(this.s.width+120), y=py*(this.s.floorHeight*11+120); this.e.flyTo(x,y,this.e.scale); });
+      }
+    }
+
+    /* InfoPanelManager: panel rendering, deep-link, pin/share. */
+    class InfoPanelManager {
+      constructor(content){ this.content=content; this.panel=document.getElementById("infoPanel"); this.pinned=[]; }
+      open(el){
+        const c=this.content.lib[el.id]||{name:el.name,what:"An important system element.",why:"It supports the company stack.",how:"It interacts with nearby services.",tools:["Internal Tool"],links:["https://developer.mozilla.org"]};
+        const mode = this.content.beginner?"Plain English":"Expert mode: includes implementation details and snippets.";
+        this.panel.innerHTML=`<h2>${c.name}</h2><p><b>${mode}</b></p><p><b>What:</b> ${c.what}</p><p><b>Why:</b> ${c.why}</p><p><b>How:</b> ${c.how}</p><p><b>Common issues:</b> latency, reliability, visibility. <b>Fix:</b> monitor + automate + capacity plan.</p><div>${c.tools.map(t=>`<span class='chip'>${t}</span>`).join("")}</div><p>${c.links.map(l=>`<a href='${l}' target='_blank'>Learn more</a>`).join(" | ")}</p><button id='pinBtn'>Pin</button> <button id='shareBtn'>Copy Link</button> <button id='closePanel'>Close</button>${el.id==='terminal'?`<div class='terminal'><div>> hidden shell ready</div><input id='termIn' style='width:100%;background:#000;color:#6efc9c;border:1px solid #254;padding:4px' placeholder='type command'/><pre id='termOut'></pre></div>`:""}`;
+        this.panel.classList.add("open");
+        location.hash = el.id;
+        document.getElementById("closePanel").onclick=()=>this.panel.classList.remove("open");
+        document.getElementById("pinBtn").onclick=()=>this.pinned.push(el.id);
+        document.getElementById("shareBtn").onclick=()=>navigator.clipboard.writeText(location.href);
+        const term=document.getElementById("termIn"); if(term){ term.onkeydown=(e)=>{ if(e.key!=="Enter") return; const v=term.value.trim(); const map={"ping":"pong: 12ms","ls floors":"0 underground ... 10 rooftop","ssh basement":"Access denied. Bring hardhat.","kubectl get pods":"api-7d5 Running\nworker-2b2 Running","sudo make me a sandwich":"Okay. 🥪 (root privileges granted humorously)."}; document.getElementById("termOut").textContent = map[v]||"command not found (educational terminal)"; term.value=""; }; }
+      }
+    }
+
+    /* SimulationEngine: random events and floor status changes. */
+    class SimulationEngine {
+      constructor(scene,toast){ this.scene=scene; this.toast=toast; this.live=false; this.timer=0; }
+      toggle(){ this.live=!this.live; }
+      tick(){ if(!this.live) return; if(performance.now()-this.timer<2600) return; this.timer=performance.now();
+        const evs=[
+          {t:"Traffic spike! Load balancer saturating",f:1,k:"warn"},
+          {t:"Build failed on CI/CD 🚨",f:2,k:"bad"},
+          {t:"Security alert in SOC",f:6,k:"bad"},
+          {t:"Database slow query detected",f:3,k:"warn"},
+          {t:"Deployment success 🎉",f:2,k:"good"},
+          {t:"Bug found in production",f:5,k:"bad"},
+        ];
+        const e=evs[Math.floor(Math.random()*evs.length)]; this.toast(e.t,e.k); this.scene.floors[e.f].status=e.k;
+      }
+    }
+
+    /* TimelineManager: scales complexity by year. */
+    class TimelineManager { constructor(scene){ this.scene=scene; } setYear(y){ const mult=0.7+y/10; this.scene.elements.forEach((el,i)=>{ if(i%5===0) el.w = 120+70*mult; }); }}
+
+    /* SearchEngine: find elements and focus/open. */
+    class SearchEngine { constructor(scene){ this.scene=scene; } query(q){ q=q.toLowerCase(); return this.scene.elements.find(e=>e.name.toLowerCase().includes(q)||e.id.includes(q)); }}
+
+    /* EasterEggController: konami, click counters, chaos behavior. */
+    class EasterEggController {
+      constructor(onToast){ this.onToast=onToast; this.k=[]; this.kon=["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a"]; window.addEventListener("keydown",e=>this.key(e.key)); }
+      key(k){ this.k.push(k); this.k=this.k.slice(-10); if(this.k.map(x=>x.toLowerCase()).join(",")==this.kon.join(",").toLowerCase()){ this.onToast("Chaos Engineering: all servers panic!", "bad"); document.body.style.filter="hue-rotate(120deg)"; setTimeout(()=>document.body.style.filter="",2500); }}
+    }
+
+    /* UIManager: bars, toasts, modals, onboarding, glossary, radar. */
+    class UIManager {
+      constructor(scene,engine,panel,timeline,search,sim){
+        this.scene=scene; this.engine=engine; this.panel=panel; this.timeline=timeline; this.search=search; this.sim=sim; this.highlight=null;
+        this.packet={active:false,x:0,y:0}; this.bind(); this.renderSidebar(); this.fillGlossary(); this.drawRadar(); this.onboard();
+      }
+      toast(text,kind="info"){ const t=document.createElement("div"); t.className=`toast ${kind}`; t.textContent=text; toasts.appendChild(t); setTimeout(()=>t.remove(),4000); }
+      renderSidebar(){ const sb=document.getElementById("sidebar"); sb.innerHTML="<h3>Floors</h3>"+this.scene.floors.map((f,i)=>`<div class='floor-item' data-f='${i}'>${f.name}<span class='status-dot' style='background:${f.status==='bad'?'var(--bad)':f.status==='warn'?'var(--warn)':'var(--good)'}'></span></div>`).join(""); [...sb.querySelectorAll('.floor-item')].forEach(d=>d.onclick=()=>{ const f=this.scene.floors[+d.dataset.f]; this.engine.flyTo(900,f.y+130,1.35); }); }
+      bind(){
+        modeBtn.onclick=()=>document.body.classList.toggle("light");
+        cbBtn.onclick=()=>document.body.style.filter = document.body.style.filter?"":"contrast(1.15) saturate(.8)";
+        beginnerBtn.onclick=()=>{ ContentLibrary.beginner=!ContentLibrary.beginner; beginnerBtn.textContent=ContentLibrary.beginner?"Beginner":"Expert"; };
+        liveBtn.onclick=()=>{ this.sim.toggle(); liveBtn.classList.toggle("glow",this.sim.live); this.toast(this.sim.live?"Live simulation enabled":"Live simulation paused"); };
+        resetBtn.onclick=()=>this.engine.flyTo(900,1600,1);
+        yearSlider.oninput=e=>{ yearOut.textContent=e.target.value; this.timeline.setYear(+e.target.value); };
+        searchInput.onkeydown=e=>{ if(e.key!=="Enter") return; const hit=this.search.query(searchInput.value); if(hit){ this.highlight=hit.id; this.engine.flyTo(hit.x,hit.y,1.7); this.panel.open(hit); this.toast(`Focused: ${hit.name}`,"good"); }};
+        sendBtn.onclick=()=>this.sendJourney();
+        document.querySelectorAll("[data-modal]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.modal).classList.add("open"));
+        document.querySelectorAll("[data-close]").forEach(b=>b.onclick=()=>b.closest(".modal").classList.remove("open"));
+      }
+      sendJourney(){
+        const steps=[10,9,8,7,6,5,4,3,2,1,0,10];
+        this.packet.active=true; const tl=gsap.timeline({onComplete:()=>{this.packet.active=false;}});
+        steps.forEach((f,i)=>{ const y=(10-f)*280+110; tl.to(this.packet,{duration:.65,x:840+Math.sin(i)*130,y}); tl.call(()=>{ this.highlight=this.scene.elements.find(e=>e.floor===f)?.id||null; this.toast(`Request at floor ${f}: ${this.scene.floors[f]?.name||'Rooftop'}`,"info"); }); });
+      }
+      fillGlossary(){ const list=document.getElementById("glossaryList"); const arr=Object.values(ContentLibrary.lib).sort((a,b)=>a.name.localeCompare(b.name)); const render=(q="")=>list.innerHTML=arr.filter(i=>i.name.toLowerCase().includes(q)).map(i=>`<p><b>${i.name}</b>: ${i.what}</p>`).join(""); render(); glossarySearch.oninput=e=>render(e.target.value.toLowerCase()); }
+      drawRadar(){ const c=document.getElementById("radarCanvas").getContext("2d"); if(!c) return; c.clearRect(0,0,620,360); c.strokeStyle="#4a6"; [60,100,140].forEach(r=>{ c.beginPath(); c.arc(300,180,r,0,Math.PI*2); c.stroke();}); c.fillStyle="#9fe"; ["Adopt","Trial","Assess","Hold"].forEach((t,i)=>c.fillText(t,300+Math.cos(i*Math.PI/2)*150,180+Math.sin(i*Math.PI/2)*150)); }
+      onboard(){ if(localStorage.getItem("stackTourDone")) return; const steps=["Drag to pan, scroll to zoom.","Click any element for explanations.","Use SEND REQUEST for packet journey.","Enable GO LIVE for incidents.","Use timeline to scale company growth."]; let i=0; tour.classList.add("open"); tourText.textContent=steps[i]; tourNext.onclick=()=>{ i++; if(i>=steps.length){ localStorage.setItem("stackTourDone",1); tour.classList.remove("open"); } else tourText.textContent=steps[i];}; tourSkip.onclick=()=>{localStorage.setItem("stackTourDone",1); tour.classList.remove("open");}; }
+    }
+
+    const sceneBuilder = new SceneBuilder(ContentLibrary);
+    const engine = new CanvasEngine(sceneBuilder);
+    const animator = new AnimationManager(sceneBuilder);
+    const infoPanel = new InfoPanelManager(ContentLibrary);
+    const timeline = new TimelineManager(sceneBuilder);
+    const search = new SearchEngine(sceneBuilder);
+    let ui;
+    const sim = new SimulationEngine(sceneBuilder,(t,k)=>ui.toast(t,k));
+    const eggs = new EasterEggController((t,k)=>ui.toast(t,k));
+    const interaction = new InteractionHandler(engine,sceneBuilder,(el)=>{
+      el.clicks=(el.clicks||0)+1;
+      if(el.id==="ceo" && el.clicks===5) ui.toast("Move fast and break things!", "bad");
+      if(el.id==="sql" && el.clicks===10) ui.toast("N+1 query problem: response turning snail-slow 🐌", "warn");
+      if(el.id==="rubber-duck") ui.toast("Rubber duck debugging: explain the bug out loud to find the fix.", "good");
+      infoPanel.open(el);
+      ui.highlight=el.id;
+    });
+    ui = new UIManager(sceneBuilder,engine,infoPanel,timeline,search,sim);
+    countOut.textContent=`${sceneBuilder.elements.length} elements — click to explore`;
+
+    // Deep-link focus
+    if(location.hash){ const id=location.hash.slice(1); const el=sceneBuilder.elements.find(e=>e.id===id); if(el){ setTimeout(()=>{engine.flyTo(el.x,el.y,1.7); infoPanel.open(el); ui.highlight=id;},300);} }
+
+    function loop(){ animator.tick(); engine.update(); sim.tick(); ui.renderSidebar(); engine.draw(ui.highlight, ui.packet); requestAnimationFrame(loop); }
+    loop();
+  </script>
+</body>
+</html>
