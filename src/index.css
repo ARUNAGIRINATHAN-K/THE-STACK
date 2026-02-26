@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+  
+  body {
+    @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100;
+  }
+
+  input[type="range"] {
+    @apply h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-lg appearance-none cursor-pointer accent-blue-500;
+  }
+  
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-300 dark:bg-zinc-800 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-400 dark:bg-zinc-700;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}

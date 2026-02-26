@@ -1,0 +1,12 @@
+[
+  {
+    "id": "checkerboard",
+    "name": "Checkerboard",
+    "description": "A 4x4 checkerboard pattern for classification."
+  },
+  {
+    "id": "moons",
+    "name": "Two Moons",
+    "description": "Two interlocking crescent moons."
+  }
+]

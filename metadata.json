@@ -1,0 +1,5 @@
+{
+  "name": "Tensor canvas",
+  "description": "An interactive neural network playground built with TensorFlow.js and React.",
+  "requestFramePermissions": []
+}
