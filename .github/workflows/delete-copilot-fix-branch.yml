@@ -1,0 +1,22 @@
+name: Delete Copilot Fix Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  delete-branch:
+    name: Delete copilot fix branch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Delete branch
+        continue-on-error: true
+        run: |
+          gh api \
+            --method DELETE \
+            /repos/${{ github.repository }}/git/refs/heads/copilot/fix-167340745-994061888-b5108494-bf6d-4cb9-9deb-e243af6ebf0f
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
