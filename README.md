@@ -2,7 +2,7 @@
 
 ![Updated](https://img.shields.io/badge/Updated-March%202026-00d4ff) ![Tools](https://img.shields.io/badge/Tools-80%2B-7c3aed) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-10b981)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents/blob/main/CONTRIBUTING.md) ![License](https://img.shields.io/badge/License-CC0-f59e0b)
 
-## Table of Contents
+## Contents
 
 - [Not Sure Where to Start](#not-sure-where-to-start)
 - [Orchestration Frameworks](#orchestration-frameworks)
@@ -19,7 +19,7 @@
 
 A meticulously curated list of frameworks, tools, platforms, and resources for building autonomous AI agents in 2026.
 
-*If this list saved you research time, please ⭐ star it — it helps others find it too.*
+If this list saved you research time, please ⭐ star it — it helps others find it too.
 
 The AI agent ecosystem grew faster in 2025 than most engineers could keep up with. New frameworks launched monthly, companies merged products, and the line between "agent framework" and "workflow automation" blurred entirely.
 
@@ -350,29 +350,23 @@ Pre-action authorization plugin for agent frameworks with a `before_tool_call` h
 
 Papers, guides, and courses for going deep on AI agent architecture.
 
-### [Building Effective Agents — Anthropic](https://www.anthropic.com/research/building-effective-agents)
+- [Building Effective Agents — Anthropic](https://www.anthropic.com/research/building-effective-agents)  
+	Anthropic's definitive guide on agent design patterns: augmented LLMs, prompt chaining, parallelization, orchestrator-subagent patterns, and evaluation strategies. Required reading before architecting any agent system.
 
-Anthropic's definitive guide on agent design patterns: augmented LLMs, prompt chaining, parallelization, orchestrator-subagent patterns, and evaluation strategies. Required reading before architecting any agent system.
+- [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)  
+	Comprehensive, community-maintained guide covering prompt engineering, context engineering, RAG, and AI agents. ⭐ 38.4k. Updated continuously with the latest techniques and research findings.
 
-### [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+- [AI Agents in LangGraph — DeepLearning.ai](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)  
+	Short, practical course on building production agents with LangGraph. Covers ReAct agents, memory, human-in-the-loop, and multi-agent coordination with hands-on coding exercises.
 
-Comprehensive, community-maintained guide covering prompt engineering, context engineering, RAG, and AI agents. ⭐ 38.4k. Updated continuously with the latest techniques and research findings.
+- [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2309.07864)  
+	Systematic benchmark for evaluating LLMs as agents across 8 distinct environments. Essential for understanding how to measure agent performance objectively rather than relying on vibes-based evaluation.
 
-### [AI Agents in LangGraph — DeepLearning.ai](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)  
+	The foundational paper behind the ReAct prompting pattern used by almost every agent framework. Understanding this paper gives you mental models for why agents plan and act the way they do.
 
-Short, practical course on building production agents with LangGraph. Covers ReAct agents, memory, human-in-the-loop, and multi-agent coordination with hands-on coding exercises.
-
-### [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2309.07864)
-
-Systematic benchmark for evaluating LLMs as agents across 8 distinct environments. Essential for understanding how to measure agent performance objectively rather than relying on vibes-based evaluation.
-
-### [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
-
-The foundational paper behind the ReAct prompting pattern used by almost every agent framework. Understanding this paper gives you mental models for why agents plan and act the way they do.
-
-### [LLM Powered Autonomous Agents — Lilian Weng](https://lilianweng.github.io/posts/2023-06-23-agent/)
-
-Lilian Weng's comprehensive breakdown of the components of LLM-powered agents: planning, memory, and tool use. One of the most shared technical agent articles ever written.
+- [LLM Powered Autonomous Agents — Lilian Weng](https://lilianweng.github.io/posts/2023-06-23-agent/)  
+	Lilian Weng's comprehensive breakdown of the components of LLM-powered agents: planning, memory, and tool use. One of the most shared technical agent articles ever written.
 
 ---
 
