@@ -39,10 +39,10 @@ Updated monthly. PRs welcome.
 - [Google ADK](https://github.com/google/adk-python) - Modular agent dev kit integrating Gemini/Vertex AI.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Enterprise framework for stateful, graph-based agent workflows.
 - [Mastra](https://github.com/mastra-ai/mastra) - Opinionated TypeScript framework with RAG and observability.
-- [Modus](https://github.com/getmodus/modus) - Serverless framework for high-throughput agent workloads.
+- [Modus](https://github.com/hypermodeinc/modus) - Serverless framework for high-throughput agent workloads.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Lightweight multi-agent SDK with tracing and guardrails.
-- [PraisonAI](https://github.com/pipelineai/praisonai) - Production multi-agent framework with self-reflection and MCP integration.
-- [Strands Agents SDK](https://github.com/awslabs/strands-agents) - AWS model-driven agent SDK with Bedrock integration.
+- [PraisonAI](https://github.com/MervinPraison/PraisonAI) - Production multi-agent framework with self-reflection and MCP integration.
+- [Strands Agents SDK](https://github.com/strands-agents/sdk-python) - AWS model-driven agent SDK with Bedrock integration.
 - [VoltAgent](https://github.com/voltagent/voltagent) - TypeScript agent framework with built-in observability and a self-improving context engine.
 
 ## Coding Agents
@@ -56,15 +56,15 @@ Updated monthly. PRs welcome.
 
 ## Memory and Context
 
-- [Cortex Memory](https://github.com/mem0ai/cortex-memory) - Solution for agent memory covering extraction, vector search, and optimization.
+- [Cortex Memory](https://github.com/prem-research/cortex) - Solution for agent memory covering extraction, vector search, and optimization.
 - [LlamaIndex](https://github.com/jerryjliu/llama_index) - Data framework for LLM applications with powerful indexing, retrieval, and RAG capabilities.
 - [Mem0](https://github.com/mem0ai/mem0) - Memory layer for AI applications with long-term, short-term, and semantic memory extraction.
 
 ## Multi-Agent Systems
 
-- [AgentVerse](https://github.com/openagent/agentverse) - Framework for custom multi-agent environments to accomplish collaborative tasks.
-- [EvoAgentX](https://github.com/evoai/evoagentx) - Evaluates and evolves agentic workflows over time.
-- [Hivemoot](https://github.com/osscommunity/hivemoot) - Agent teams that autonomously build software on GitHub.
+- [AgentVerse](https://github.com/OpenBMB/AgentVerse) - Framework for custom multi-agent environments to accomplish collaborative tasks.
+- [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) - Evaluates and evolves agentic workflows over time.
+- [Hivemoot](https://github.com/hivemoot/hivemoot) - Agent teams that autonomously build software on GitHub.
 - [Swarm](https://github.com/openai/swarm) - Lightweight framework for agent handoffs, context variables, and function calling patterns.
 - [Swarms Framework](https://github.com/kyegomez/swarms) - Multi-agent orchestration for production use cases with scalability and reliability.
 
@@ -73,8 +73,8 @@ Updated monthly. PRs welcome.
 - [AgentDock](https://github.com/agentdock/agentdock) - Framework for building and deploying production-ready AI agents.
 - [E2B](https://github.com/e2b-dev/e2b) - Cloud sandboxes for AI agents to run code securely.
 - [Firecrawl](https://github.com/mendableai/firecrawl) - Web scraping API built for LLMs that converts websites to clean markdown.
-- [Notte](https://github.com/notte-dev/notte) - Browser automation for production pipelines.
-- [Pilot Protocol](https://github.com/pilotprotocol/pilot) - Networking stack for distributed agent systems with encrypted tunnels.
+- [Notte](https://github.com/nottelabs/notte) - Browser automation for production pipelines.
+- [Pilot Protocol](https://github.com/TeoSlayer/pilotprotocol) - Networking stack for distributed agent systems with encrypted tunnels.
 
 ## Low and No-Code Builders
 
@@ -85,15 +85,15 @@ Updated monthly. PRs welcome.
 
 ## Voice and Multimodal Agents
 
-- [Agentset](https://github.com/agentset/agentset) - Production RAG platform with reasoning, hybrid search, and multimodal support.
+- [Agentset](https://github.com/agentset-ai/agentset) - Production RAG platform with reasoning, hybrid search, and multimodal support.
 - [Pipecat](https://github.com/pipecat-ai/pipecat) - Framework for voice and multimodal conversational AI.
 
 ## Safety Guardrails and Observability
 
-- [Agent OS](https://github.com/agentosdev/agentos) - Kernel architecture for governing autonomous AI agents.
-- [AgentGuard](https://github.com/agentguard/agentguard) - Runtime observability and guardrails for AI agents with loop detection.
-- [APort Agent Guardrails](https://github.com/aporthq/agent-guardrails) - Pre-action authorization plugin for agent frameworks.
-- [Orchard Kit](https://github.com/orchardlabs/orchard-kit) - Modules for agent runtime security, self-audit, and collective cognition.
+- [Agent OS](https://github.com/buildermethods/agent-os) - Kernel architecture for governing autonomous AI agents.
+- [AgentGuard](https://github.com/cyberark/agent-guard) - Runtime observability and guardrails for AI agents with loop detection.
+- [APort Agent Guardrails](https://github.com/aporthq/aport-agent-guardrails) - Pre-action authorization plugin for agent frameworks.
+- [Orchard Kit](https://github.com/OrchardHarmonics/orchard-kit) - Modules for agent runtime security, self-audit, and collective cognition.
 
 ## Learning Resources
 
