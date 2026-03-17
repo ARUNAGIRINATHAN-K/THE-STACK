@@ -75,6 +75,7 @@ Updated monthly. PRs welcome.
 - [Firecrawl](https://github.com/mendableai/firecrawl) - Web scraping API built for LLMs that converts websites to clean markdown.
 - [Notte](https://github.com/nottelabs/notte) - Browser automation for production pipelines.
 - [Pilot Protocol](https://github.com/TeoSlayer/pilotprotocol) - Networking stack for distributed agent systems with encrypted tunnels.
+- [Arch Tools](https://archtools.dev) - 61 production-ready AI tools (code analysis, web scraping, image generation, NLP, crypto, search) accessible via REST API and MCP protocol. Native x402 USDC micropayments on Base, Polygon, Avalanche, and Solana.
 
 ## Low and No-Code Builders
 
