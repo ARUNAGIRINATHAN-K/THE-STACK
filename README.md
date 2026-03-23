@@ -77,6 +77,7 @@ Updated monthly. PRs welcome.
 - [Firecrawl](https://github.com/mendableai/firecrawl) - Web scraping API built for LLMs that converts websites to clean markdown.
 - [Notte](https://github.com/nottelabs/notte) - Browser automation for production pipelines.
 - [Pilot Protocol](https://github.com/TeoSlayer/pilotprotocol) - Networking stack for distributed agent systems with encrypted tunnels.
+- [Engram](https://github.com/kwstx/engram_translator) - Universal bridge for multi-protocol AI agent systems with automated semantic mapping.
 
 ## Low and No-Code Builders
 
