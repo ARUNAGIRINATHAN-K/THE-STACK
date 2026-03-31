@@ -112,3 +112,4 @@ If this list saved you research time, please star it — it helps others find it
 
 - March 2026 - Initial release with 80+ tools across 9 categories.
 - March 2026 - Added Semantic Kernel to Orchestration Frameworks. Added Agent Deployment and Hosting category with 5 tools.
+- March 2026 - Added Smolagents, PydanticAI, and Letta to Orchestration Frameworks
