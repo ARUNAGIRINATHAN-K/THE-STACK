@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Install codespell
-        run: python -m pip install codespell
+        run: python -m pip install "codespell==2.2.6"
 
       - name: Check English in docs and comments
         run: codespell -q 3 --skip=.git,node_modules --check-filenames --ignore-words-list="reworkd" .
