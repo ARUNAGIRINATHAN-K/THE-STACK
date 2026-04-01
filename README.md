@@ -63,6 +63,7 @@ If this list saved you research time, please star it — it helps others find it
 - [Hivemoot](https://github.com/hivemoot/hivemoot) - Agent teams that autonomously build software on GitHub.
 - [Swarm](https://github.com/openai/swarm) - Lightweight framework for agent handoffs, context variables, and function calling patterns.
 - [Swarms Framework](https://github.com/kyegomez/swarms) - Multi-agent orchestration for production use cases with scalability and reliability.
+- [Cursor AI Automated Team](https://github.com/joinwell52-AI/joinwell52) - File-based multi-agent system for autonomous AI dev teams in Cursor IDE.
 
 ## Agent Tooling and Infrastructure
 
