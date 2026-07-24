@@ -224,8 +224,8 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Docling](https://github.com/docling-project/docling) `🌱` `[Python]` `[IDE]` - Parses PDFs, DOCX, and slides into structured text with deep layout understanding for document agents.
 - [E2B](https://github.com/e2b-dev/e2b) `🌱` `[TypeScript]` `[Multi-Agent]` - Cloud sandboxes for AI agents to run code securely in isolated environments.
 - [Engram](https://github.com/kwstx/translator) `🌱` `[Python]` `[Multi-Agent]` - Universal bridge for multi-protocol AI agent systems with automated semantic mapping.
-- [GenTech Agent Kit](https://github.com/ProtoJay4789/genTech-agent-kit) `🔬` `[Python]` `[MCP]` - Multichain AI agent toolkit with on-chain identity (ERC-8004), x402 pay-per-call API gateway, and 15+ DeFi intelligence endpoints.
 - [Firecrawl](https://github.com/firecrawl/firecrawl) `🌱` `[TypeScript]` `[Multi-Agent]` - Web scraping API built for LLMs that converts websites to clean, structured markdown.
+- [GenTech Agent Kit](https://github.com/ProtoJay4789/genTech-agent-kit) `🔬` `[Python]` `[MCP]` - Multichain AI agent toolkit with on-chain identity (ERC-8004), x402 pay-per-call API gateway, and 15+ DeFi intelligence endpoints.
 - [Jina Reader](https://github.com/jina-ai/reader) `🌱` `[TypeScript]` `[Multi-Agent]` - Converts any URL to LLM-ready clean text via a simple API prefix for agent ingestion.
 - [LlamaParse](https://github.com/run-llama/llama_cloud_services) `🌱` `[Python]` `[RAG]` - GenAI-native document parser designed to extract complex tables and layouts for RAG pipelines.
 - [Marker](https://github.com/datalab-to/marker) `🌱` `[Python]` `[CLI]` - Converts PDF documents to markdown with high accuracy for tables, equations, and figures.
