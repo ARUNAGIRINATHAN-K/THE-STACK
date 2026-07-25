@@ -519,7 +519,7 @@ Tools for generating images, video, music, audio, and 3D assets using AI models.
 - [LTX Video](https://github.com/Lightricks/LTX-Video) `🌱` `[Python]` `[IDE]` - Commercially safe open-source video generation model trained on fully licensed data.
 - [Luma Dream Machine](https://lumalabs.ai/app) `🌱` `[Cloud]` `[IDE]` - Creates physics-accurate 4K HDR video scenes with 3D-style output for cinematic quality.
 - [Pika 2.5](https://pika.art/login) `🌱` `[Cloud]` `[IDE]` - Beginner-friendly video generation tool with fast turnaround and intuitive editing controls.
-- [Runway Gen-4.5](https://runwayml.com) `🌱` `[Cloud]` `[IDE]` - Professional video generation with Motion Brush and the highest benchmark scores for visual quality.
+- [Runway Gen-4.5](https://runway.com) `🌱` `[Cloud]` `[IDE]` - Professional video generation with Motion Brush and the highest benchmark scores for visual quality.
 - [Seedance 2.0](https://seed.bytedance.com/en/seedance) `🌱` `[Cloud]` `[IDE]` - Quad-modal input video generator with built-in lip-sync and 2K resolution output.
 - [Sora 2](https://sora.com) `🚀` `[Cloud]` `[OpenAI]` - Generates 25-second cinematic video clips with strong narrative coherence from text prompts by OpenAI.
 - [Wan 2.1](https://github.com/Wan-Video/Wan2.1) `🌱` `[Python]` `[IDE]` - Open-source self-hosted video generation model with unlimited length and no per-video costs.
