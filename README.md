@@ -339,7 +339,7 @@ Frontend workspaces and chat interfaces with built-in agent plugins and tool-use
 
 - [AgentBench](https://github.com/THUDM/AgentBench) `🌱` `[Python]` `[Benchmark]` - Comprehensive benchmark for evaluating LLMs as agents across 8 distinct environments.
 - [ARC-AGI-2](https://arcprize.org) `🌱` `[Python]` `[Benchmark]` - Frontier benchmark for measuring general intelligence capabilities in AI agents beyond pattern matching.
-- [ClawBench](https://github.com/reacher-z/ClawBench) `🔬` `[Python]` `[Benchmark]` - Evaluates browser agents on 153 write-heavy tasks across 144 live websites with trace-based scoring.
+- [ClawBench](https://github.com/reacher-z/ClawBench) `🔬` `[Python]` `[Benchmark]` - Evaluates web agents on 283 real-world tasks across 163 live websites with interception and trace-based scoring.
 - [GAIA Benchmark](https://huggingface.co/papers/2311.12983) `🌱` `[Python]` `[Benchmark]` - Benchmark for General AI Assistants measuring real-world reasoning and tool use.
 - [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) `🌱` `[Python]` `[Evaluation]` - Framework for evaluating large language models with composable tasks and scoring.
 - [SWE-bench](https://github.com/SWE-bench/SWE-bench) `🚀` `[Python]` `[GitHub]` - Benchmark for evaluating LLMs on real-world software engineering tasks from GitHub issues.
