@@ -834,3 +834,6 @@ Your contributions are what keep this list useful. Read [Contributing.md](CONTRI
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ARUNAGIRINATHAN-K/awesome-ai-agents-2026&type=Date)](https://star-history.com/#ARUNAGIRINATHAN-K/awesome-ai-agents-2026&Date)
+
+## STIL.AI — AI Fashion Design
+- [STIL.AI](https://tools.gracestack.se/designa-klader.html) — Describe your dream outfit in text, AI generates a unique fashion design. 3 free designs, HD from 9 SEK via Klarna. Swedish company (Gracestack AB).
