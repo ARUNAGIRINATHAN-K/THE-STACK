@@ -613,6 +613,7 @@ Platforms for building, deploying, and scaling voice-based AI agents across call
 - [Synthesia](https://www.synthesia.io) `🌱` `[Cloud]` `[IDE]` - Generates AI video avatars that speak in 120+ languages for training and communication agents.
 - [Synthflow](https://synthflow.ai) `🌱` `[Cloud]` `[No-Code]` - No-code voice agent builder with pre-built templates for SMBs to deploy phone agents quickly.
 - [Voiceflow](https://www.voiceflow.com) `🌱` `[Cloud]` `[No-Code]` - No-code builder for voice and chat agents with visual conversation design and team collaboration.
+- [Workforce Wave](https://www.workforcewave.com/) `🔬` `[Cloud]` `[Voice]` - AI voice receptionist for SMBs handling 24/7 call answering, appointment booking, and lead capture.
 
 ## Deep Research Agents
 
