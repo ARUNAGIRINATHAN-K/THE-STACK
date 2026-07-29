@@ -51,6 +51,7 @@
 - [AI Governance and Compliance](#ai-governance-and-compliance)
 - [Cybersecurity Agents](#cybersecurity-agents)
 - [Healthcare and Therapy Agents](#healthcare-and-therapy-agents)
+- [Translation and Localization Agents](#translation-and-localization-agents)
 - [Newsletters and Communities](#newsletters-and-communities)
 - [Changelog](#changelog)
 - [Star History](#star-history)
@@ -809,6 +810,12 @@ AI agents for mental health support, cognitive training, and therapy-adjacent ap
 - [Woebot](https://woebothealth.com) `🌱` `[Cloud]` `[Multi-Agent]` - CBT-based mental health chatbot that is FDA-cleared and Stanford-validated for therapeutic conversations.
 - [Wysa](https://www.wysa.com) `🌱` `[Cloud]` `[Multi-Agent]` - NHS-approved AI mental health companion using CBT and DBT with anonymous design principles.
 - [Youper](https://www.youper.ai) `🌱` `[Cloud]` `[CLI]` - Emotional health assistant using CBT and ACT with Stanford-tested clinical effectiveness for mood tracking.
+
+## Translation and Localization Agents
+
+AI agents and services specialized in machine translation, human translation, multilingual content, and localization workflows for global market expansion.
+
+- [NitroTranslate](https://nitrotranslate.com) `🚀` `[Cloud]` `[API]` - Human translation service that AI agents can call and pay for autonomously via the Machine Payments Protocol (MPP).
 
 ## Newsletters and Communities
 
