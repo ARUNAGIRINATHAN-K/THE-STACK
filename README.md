@@ -151,8 +151,7 @@
 - [Superdense](https://github.com/Nimrobo/superdense) `🔬` `[TypeScript]` `[Memory]` - Gives coding agents persistent memory of what worked across sessions, tracked against real-world outcomes.
 - [Supermemory](https://github.com/supermemoryai/supermemory) `🌱` `[TypeScript]` `[Vector DB]` - Extremely fast and scalable memory engine and API designed for the AI era.
 - [Tree Ring Memory](https://github.com/TerminallyLazy/Tree-Ring-Memory) `🔬` `[Rust]` `[Memory]` - Manages local agent memory with recall, forgetting, audit trails, and session consolidation.
-- [Vestige](https://github.com/samvallad33/vestige) `🌱` `[Rust]` `[MCP]` — Provides local-first memory for coding agents with FSRS-6 retention, active forgetting, and correction tools.
-- [Bride Cognitive API](https://tools.gracestack.se/bride-api.html) `🌱` `[Rust]` `[Cognitive]` — Cognitive AI API with HDC (Hyperdimensional Computing), Active Inference (AIF), emotional modeling, anomaly detection, and Ebbinghaus memory. REST API with 5 endpoints (cognitive analysis, anomaly detection, hypotheses, memory, dreams). 499kr/month for AI agent builders. Built by Gracestack AB.
+- [Vestige](https://github.com/samvallad33/vestige) `🌱` `[Rust]` `[MCP]` - Provides local-first memory for coding agents with FSRS-6 retention, active forgetting, and correction tools.
 - [Weaviate](https://github.com/weaviate/weaviate) `🌱` `[Go]` `[Vector DB]` - Stores and searches vector embeddings with hybrid keyword and semantic retrieval for agent knowledge.
 - [Zep](https://github.com/getzep/zep) `🌱` `[Python]` `[Multi-Agent]` - Enriches agent long-term memory with automatic summarization, entity extraction, and search.
 
