@@ -778,6 +778,7 @@ Tools for running LLMs locally and self-hosting AI agent platforms with full pri
 
 Frameworks and tools for AI risk management, regulatory compliance, and governance as EU AI Act obligations take effect August 2026.
 
+- [Article 50 Voice Agent Proof](https://github.com/stevenknowswhy/article50-voice-agent-proof) `🔬` `[Python]` `[Compliance]` - Tests voice-agent disclosure, consent, opt-out, and call lifecycles with LiveKit and Vapi reference implementations.
 - [Credo AI](https://www.credo.ai) `🌱` `[Cloud]` `[Multi-Agent]` - End-to-end AI governance platform with EU AI Act policy packs and model inventory management.
 - [EU AI Act](https://artificialintelligenceact.eu) `🌱` `[Python]` `[Multi-Agent]` - Official EU regulatory framework classifying AI systems by risk tier from unacceptable to minimal risk.
 - [IBM watsonx.governance](https://www.ibm.com/products/watsonx-governance) `🚀` `[Cloud]` `[Compliance]` - Enterprise AI risk, compliance, and model monitoring platform for regulated industries.
