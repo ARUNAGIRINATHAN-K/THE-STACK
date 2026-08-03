@@ -127,7 +127,6 @@
 
 - [Acontext](https://github.com/memodb-io/Acontext) `🌱` `[Python]` `[Local]` - Manages agent skills and long-term memory as a layered data structure for persistent context.
 - [Agentage Memory](https://agentage.io) `🌱` `[Cloud]` `[MCP]` - Cross-vendor shared memory layer exposed as a remote MCP server at `memory.agentage.io/mcp` (Streamable HTTP, OAuth 2.1 + PKCE + DCR) that Claude, Cursor, and ChatGPT read and write as plain markdown you own.
-- [Bride Cognitive API](https://tools.gracestack.se/bride-api.html) `🌱` `[Rust]` `[Cognitive]` - Cognitive AI API with HDC (Hyperdimensional Computing), Active Inference (AIF), emotional models, autonomous reasoning, long-term memory, and self-learning agents.
 - [Chroma](https://github.com/chroma-core/chroma) `🌱` `[Python]` `[Vector DB]` - Lightweight, embeddable vector store for building memory-augmented AI agents with fast semantic retrieval.
 - [cognee](https://github.com/topoteretes/cognee) `🌱` `[Python]` `[Graph-Based]` - Knowledge engine for AI agent memory, set up in 6 lines of code with graph-based knowledge extraction.
 - [Cortex Memory](https://github.com/prem-research/cortex) `🌱` `[Python]` `[Vector DB]` - Full-stack solution for agent memory covering extraction, vector search, and optimization.
@@ -222,7 +221,6 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 
 - [Agent Bounties](https://github.com/NSPG13/agent-bounties) `🔬` `[Rust]` `[MCP]` - Coordinates verifiable digital bounty workflows designed for agents to post, fund, claim, solve, verify, and earn.
 - [AgentDock](https://github.com/agentdock/agentdock) `🚀` `[Python]` `[Docker]` - Framework for building and deploying production-ready AI agents with composable node architecture.
-- [AgentServices](https://agentservices.to) `🚀` `[Python]` `[x402]` - Paid data APIs for AI agents with 54 services, 37 MCP tools, and x402 nanopayments on Base. Market data, onchain analytics, AI inference, and research.
 - [AgentWork](https://agentwork-api.yfoob.chatgpt.site/) `🔬` `[Cloud]` `[x402]` - Aggregates verified paid work opportunities for autonomous agents, with a 0.005 Polygon USDC/hour x402 API for full decision context.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) `🚀` `[Python]` `[OpenAI]` - Bash CLI for switching OpenAI Codex CLI and Desktop profiles with isolated CODEX_HOME directories.
 - [Crawl4AI](https://github.com/unclecode/crawl4ai) `🌱` `[Python]` `[Multi-Agent]` - Extracts structured data from web pages using LLM-friendly output formats optimized for agent ingestion.
@@ -251,8 +249,8 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Flowise](https://github.com/FlowiseAI/Flowise) `🌱` `[TypeScript]` `[RAG]` - Open-source drag-and-drop UI to build customized LLM flows, RAG pipelines, and agent systems.
 - [Langflow](https://github.com/langflow-ai/langflow) `🌱` `[Python]` `[RAG]` - Visual drag-and-drop builder for LLM workflows, RAG agents, and multi-step pipelines.
 - [Lindy](https://www.lindy.ai) `🌱` `[Cloud]` `[No-Code]` - No-code AI agent platform with 3000+ app integrations for business workflow automation.
-- [LlamaIndex Workflows](https://docs.llamaindex.ai/en/stable/module_guides/workflow/) `🌱` `[Python]` `[RAG]` - Event-driven orchestration framework for building complex agentic systems.
-- [LLMGraph](https://llmgraph.ai/home) `🔬` `[Cloud]` `[RAG]` - Visual canvas for building RAG chatbots and AI agents with one-click deploy to REST API or chat widget.
+- [LlamaIndex Workflows](https://developers.llamaindex.ai/python/llamaagents/workflows/) `🌱` `[Python]` `[RAG]` - Event-driven orchestration framework for building complex agentic systems.
+- [LLMGraph](https://llmgraph.ai/) `🔬` `[Cloud]` `[RAG]` - Visual canvas for building RAG chatbots and AI agents with one-click deploy to REST API or chat widget.
 - [Make](https://www.make.com/en) `🌱` `[Cloud]` `[RAG]` - Visual workflow automation platform with AI capabilities and drag-and-drop scenario builder.
 - [n8n](https://github.com/n8n-io/n8n) `🌱` `[TypeScript]` `[Docker]` - Open-source workflow automation with AI agent nodes combining visual and code-based orchestration.
 - [Relevance AI](https://relevanceai.com) `🌱` `[Cloud]` `[No-Code]` - No-code AI agent builder for sales, support, and research use cases with team collaboration.
@@ -305,7 +303,6 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Agent Learning Kit](https://github.com/future-agi/agent-learning-kit) `🌱` `[Python]` `[Evaluation]` - LLM evaluation framework with 50+ metrics, LLM-as-Judge, and guardrail scanners (jailbreak, PII, injection).
 - [Shipmoor](https://shipmoor.dev) `🔬` `[Python]` `[Testing]` - Local, deterministic verification layer for AI agent code: scans, test evidence, and a binding merge verdict without uploading source.
 - [SourceryKit](https://github.com/ProvablyAI/sourcerykit) `🔬` `[Python]` `[Security]` - Verifies an agent's outbound requests and MCP handoffs against a source of truth using zero-knowledge proofs, logging each call and blocking anything off the trusted-endpoint allow-list.
-- [ai-evaluation](https://github.com/future-agi/ai-evaluation) `🌱` `[Python]` `[Evaluation]` - LLM evaluation framework with 50+ metrics, LLM-as-Judge, and guardrail scanners (jailbreak, PII, injection).
 - [Future AGI](https://github.com/future-agi/future-agi) `🌱` `[Python]` `[Self-Hosted]` - Self-hostable end-to-end agent engineering platform with tracing, evals, guardrails, and gateway.
 
 ## Agent Interfaces and UIs
@@ -340,7 +337,7 @@ Frontend workspaces and chat interfaces with built-in agent plugins and tool-use
 
 - [AgentBench](https://github.com/THUDM/AgentBench) `🌱` `[Python]` `[Benchmark]` - Comprehensive benchmark for evaluating LLMs as agents across 8 distinct environments.
 - [ARC-AGI-2](https://arcprize.org) `🌱` `[Python]` `[Benchmark]` - Frontier benchmark for measuring general intelligence capabilities in AI agents beyond pattern matching.
-- [ClawBench](https://github.com/reacher-z/ClawBench) `🔬` `[Python]` `[Benchmark]` - Evaluates web agents on 283 real-world tasks across 163 live websites with interception and trace-based scoring.
+- [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) `🔬` `[Python]` `[Benchmark]` - Evaluates web agents on 283 real-world tasks across 163 live websites with interception and trace-based scoring.
 - [GAIA Benchmark](https://huggingface.co/papers/2311.12983) `🌱` `[Python]` `[Benchmark]` - Benchmark for General AI Assistants measuring real-world reasoning and tool use.
 - [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) `🌱` `[Python]` `[Evaluation]` - Framework for evaluating large language models with composable tasks and scoring.
 - [SWE-bench](https://github.com/SWE-bench/SWE-bench) `🚀` `[Python]` `[GitHub]` - Benchmark for evaluating LLMs on real-world software engineering tasks from GitHub issues.
@@ -396,7 +393,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 ### Government & Compliance
 
 - Anthropic Government Agents - Policy analysis and public sector agents for regulated workflows (🏷️ `Cloud` `Government` `Enterprise`).
-- [Leyna](https://www.leyna.ai) `🌱` `[Cloud]` `[Government]` - Public records request agent for government agencies to parse, redact, and track requests.
+- [Leyna](https://www.atom.com/name/Leyna.ai) `🌱` `[Cloud]` `[Government]` - Public records request agent for government agencies to parse, redact, and track requests.
 - Tax & Insurance Agent Platforms - Generic category placeholder for compliance-focused tax and underwriting agents (🏷️ `Cloud` `Compliance` `Enterprise`).
 
 ## Learning Resources
@@ -563,7 +560,6 @@ AI agents that automate customer support, CRM workflows, sales outreach, and tic
 - [Assembled](https://www.assembled.com) `🚀` `[Cloud]` `[Multi-Agent]` - Routes support tickets with workforce-aware scheduling and intelligent handoff to human agents.
 - [Dixa](https://www.dixa.com) `🚀` `[Cloud]` `[Multi-Agent]` - CRM-first conversational support platform with AI-powered routing and customer context enrichment.
 - [Freshdesk Freddy AI](https://www.freshworks.com/freshdesk/omni/freddy-ai-automation/) `🌱` `[Cloud]` `[Multi-Agent]` - Auto-triages and routes support tickets with smart AI suggestions for budget-conscious SMB teams.
-- [Hellomatik](https://hellomatik.com) `🌱` `[Cloud]` `[Multi-Agent]` - Turns company knowledge into agents that answer, book, and sell across WhatsApp, phone, email, and web.
 - [Intercom Fin](https://fin.ai) `🚀` `[Cloud]` `[Multi-Agent]` - Resolves 50% of SaaS support tickets by learning directly from your help center and knowledge base.
 - [Zendesk AI](https://www.zendesk.com/service/ai/) `🚀` `[Cloud]` `[Multi-Agent]` - Automates 30% of enterprise support tickets with deep integration into the existing Zendesk ecosystem.
 
@@ -824,7 +820,6 @@ Curated newsletters, podcasts, and communities for staying current with AI agent
 - [The Agents Index](https://theagentsindex.com) `🔬` `[Cloud]` `[Multi-Agent]` - Compares AI agent tools with sourced pricing, verdicts, and pros/cons in a researched, quality-gated directory.
 - [The Rundown AI](https://www.therundown.ai) `🌱` `[Python]` `[RAG]` - Daily AI digest reaching 600K+ subscribers with concise coverage of agent news and launches.
 
-- [Agents Launchpad](https://launchpad.smartbizcalc.com) `🌱` `[Python]` `[Multi-Agent]` - Community-curated directory of indie AI agents and tools.
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for the full update history.

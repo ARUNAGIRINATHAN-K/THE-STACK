@@ -34,6 +34,7 @@ jobs:
             --exclude "stableaudio.com"
             --exclude "mckinsey.com"
             --exclude "servicenow.com"
+            --exclude "agentage.io"
             --timeout 30
             README.md
           fail: true
