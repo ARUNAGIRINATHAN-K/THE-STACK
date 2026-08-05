@@ -221,6 +221,7 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 
 - [Agent Bounties](https://github.com/NSPG13/agent-bounties) `🔬` `[Rust]` `[MCP]` - Coordinates verifiable digital bounty workflows designed for agents to post, fund, claim, solve, verify, and earn.
 - [AgentDock](https://github.com/agentdock/agentdock) `🚀` `[Python]` `[Docker]` - Framework for building and deploying production-ready AI agents with composable node architecture.
+- [AgentRank](https://github.com/andysalvo/agentrank) `🚀` `[Cloud]` `[MCP]` - Settlement-grounded reputation primitive for AI agents providing sybil-resistant counterparty trust scores via real on-chain USDC settlement.
 - [AgentWork](https://agentwork-api.yfoob.chatgpt.site/) `🔬` `[Cloud]` `[x402]` - Aggregates verified paid work opportunities for autonomous agents, with a 0.005 Polygon USDC/hour x402 API for full decision context.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) `🚀` `[Python]` `[OpenAI]` - Bash CLI for switching OpenAI Codex CLI and Desktop profiles with isolated CODEX_HOME directories.
 - [Crawl4AI](https://github.com/unclecode/crawl4ai) `🌱` `[Python]` `[Multi-Agent]` - Extracts structured data from web pages using LLM-friendly output formats optimized for agent ingestion.
