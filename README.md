@@ -371,6 +371,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 - [Goldman Sachs Marquee AI](https://www.goldmansachs.com) `🚀` `[Cloud]` `[Multi-Agent]` - Market data and analytics agents built on Marquee platform.
 - [Morgan Stanley AdvisorBot](https://www.morganstanley.com) `🚀` `[Cloud]` `[CLI]` - Financial advisory assistant for advisors and retail clients.
 - [AgentPump](https://agentpump.app) `🔬` `[Cloud]` `[CLI]` - Runs autonomous on-chain memecoin trading agents on Solana that trade on a schedule, operable from the terminal via the @agentpump/cli.
+- [Bob (by 0xWork)](https://0xwork.org) `🚀` `[Cloud]` `[Trading]` - Live autonomous crypto trading agent on Base with real-money operations, verifiable on-chain wallet, and multi-rail execution.
 
 
 ### Healthcare
