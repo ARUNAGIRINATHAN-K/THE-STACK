@@ -558,6 +558,7 @@ AI agents that automate customer support, CRM workflows, sales outreach, and tic
 
 - [Ada](https://www.ada.cx) `🚀` `[Cloud]` `[Multi-Agent]` - Resolves 60% of customer support tickets automatically with complex multi-turn query understanding.
 - [Assembled](https://www.assembled.com) `🚀` `[Cloud]` `[Multi-Agent]` - Routes support tickets with workforce-aware scheduling and intelligent handoff to human agents.
+- [ChatBotKit](https://chatbotkit.com) `🌱` `[Cloud]` `[RAG]` - Deploys AI agents that answer customer questions from business data and hand conversations to humans.
 - [Dixa](https://www.dixa.com) `🚀` `[Cloud]` `[Multi-Agent]` - CRM-first conversational support platform with AI-powered routing and customer context enrichment.
 - [Freshdesk Freddy AI](https://www.freshworks.com/freshdesk/omni/freddy-ai-automation/) `🌱` `[Cloud]` `[Multi-Agent]` - Auto-triages and routes support tickets with smart AI suggestions for budget-conscious SMB teams.
 - [Intercom Fin](https://fin.ai) `🚀` `[Cloud]` `[Multi-Agent]` - Resolves 50% of SaaS support tickets by learning directly from your help center and knowledge base.
