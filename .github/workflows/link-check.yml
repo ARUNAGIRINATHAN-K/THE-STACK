@@ -35,6 +35,7 @@ jobs:
             --exclude "mckinsey.com"
             --exclude "servicenow.com"
             --exclude "agentage.io"
+            --exclude "agentwork-api.yfoob.chatgpt.site"
             --timeout 30
             README.md
           fail: true
