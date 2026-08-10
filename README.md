@@ -237,6 +237,7 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Pilot Protocol](https://github.com/pilot-protocol/pilotprotocol) `🌱` `[Go]` `[Multi-Agent]` - Networking stack for distributed agent systems with encrypted tunnels.
 - [Playwright](https://github.com/microsoft/playwright) `🌱` `[TypeScript]` `[Testing]` - Automates Chromium, Firefox, and WebKit browsers with a single cross-language API for agent-driven testing.
 - [ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai) `🌱` `[Python]` `[LangChain]` - Python web-scraping library that uses LLMs to build intelligent scraping pipelines from natural-language instructions.
+- [sms-florin MCP](https://github.com/flovoice53-tech/sms-florin-mcp) `🔬` `[TypeScript]` `[MCP]` - Rents real UK phone numbers and retrieves SMS/OTP codes for agents testing signup and verification flows.
 - [Surya](https://github.com/datalab-to/surya) `🌱` `[Python]` `[CLI]` - Runs OCR and layout detection on documents in 90+ languages for multilingual document agents.
 - [Tavily](https://github.com/tavily-ai/tavily-python) `🌱` `[Python]` `[Multi-Agent]` - Search API purpose-built for LLM agents providing real-time, accurate web data with source citations.
 - [traceAI](https://github.com/future-agi/traceAI) `🌱` `[Python]` `[Observability]` - OpenTelemetry-native tracing for LLM and agent apps with 50+ framework integrations.
