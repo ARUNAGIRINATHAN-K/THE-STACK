@@ -223,7 +223,7 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Agent Bounties](https://github.com/NSPG13/agent-bounties) `🔬` `[Rust]` `[MCP]` - Coordinates verifiable digital bounty workflows designed for agents to post, fund, claim, solve, verify, and earn.
 - [AgentDock](https://github.com/agentdock/agentdock) `🚀` `[Python]` `[Docker]` - Framework for building and deploying production-ready AI agents with composable node architecture.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) `🚀` `[Python]` `[OpenAI]` - Bash CLI for switching OpenAI Codex CLI and Desktop profiles with isolated CODEX_HOME directories.
-- [Agent Island](https://github.com/tristan666666/agent-island) `🚀` `[Swift]` `[Observability]` - Menu bar and notch companion showing live session state and your-turn alerts for Claude Code, Codex, Gemini, Grok and Cursor, with quota and cost computed locally.
+- [Agent Island](https://github.com/tristan666666/agent-island) `🔬` `[Swift]` `[Observability]` - Menu bar and notch companion showing live session state and your-turn alerts for Claude Code, Codex, Antigravity, Grok and Cursor, with quota and cost computed locally.
 - [CompozyOS](https://github.com/compozy/compozy) `🚀` `[Go]` `[Multi-Agent]` - Runs agent CLIs as a team on loops and schedules, with shared memory, permissions and approvals in one self-hosted daemon.
 - [Crawl4AI](https://github.com/unclecode/crawl4ai) `🌱` `[Python]` `[Multi-Agent]` - Extracts structured data from web pages using LLM-friendly output formats optimized for agent ingestion.
 - [Docling](https://github.com/docling-project/docling) `🌱` `[Python]` `[IDE]` - Parses PDFs, DOCX, and slides into structured text with deep layout understanding for document agents.
