@@ -195,6 +195,7 @@ The protocol layer that enables agents to discover tools, communicate with each 
 - [Toolhouse](https://toolhouse.ai/en/) `🌱` `[Python]` `[Multi-Agent]` - Cloud-hosted tool infrastructure for agents with optimized execution and low-latency access.
 - [Zapier MCP Server](https://zapier.com/mcp) `🌱` `[Cloud]` `[MCP]` - Connect agents to 7,000+ app integrations via MCP, powered by Zapier's automation platform.
 - [zero-api-key-web-search](https://github.com/wd041216-bit/zero-api-key-web-search) `🌱` `[Python]` `[MCP]` - Free web search toolkit for AI agents with no API keys, MCP server support.
+- [stipend.sh](https://github.com/stipend-sh/stipend) `🔬` `[Python]` `[MCP]` - Installs a non-custodial USDC wallet on Base with spending limits enforced in the signing path.
 
 ## Browser and Computer Use Agents
 
