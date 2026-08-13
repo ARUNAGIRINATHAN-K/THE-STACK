@@ -144,6 +144,7 @@
 - [Milvus](https://github.com/milvus-io/milvus) `🌱` `[Go]` `[Vector DB]` - Scales vector search to billions of embeddings for large-scale agent knowledge bases.
 - [Mori (森)](https://github.com/fjwood69/mori) `🌱` `[Python]` `[MCP]` - Sovereign shared memory layer for AI coding agents with zero-instrumentation capture via lifecycle hooks, a dream pipeline that distills sessions into curated governed memories, and support for Claude Code, Cursor, Codex, and Antigravity.
 - [Motorhead](https://github.com/getmetal/motorhead) `🌱` `[Rust]` `[Multi-Agent]` - Manages conversation context windows for agents with automatic background summarization.
+- [Open Index](https://github.com/DrDroidLab/open-index) `🔬` `[Python]` `[MCP]` - Builds typed knowledge graphs with hybrid search and read/write MCP tools for domain-specific agents.
 - [Pathway](https://github.com/pathwaycom/pathway) `🌱` `[Python]` `[RAG]` - Live data RAG engine with real-time streaming for agents that need up-to-the-second knowledge.
 - [Pinecone](https://www.pinecone.io) `🚀` `[Cloud]` `[Vector DB]` - Managed vector database with agent namespaces for multi-tenant isolation, hybrid search (vector + keyword), serverless auto-scaling, and $11B valuation.
 - [Qdrant](https://github.com/qdrant/qdrant) `🌱` `[Rust]` `[Vector DB]` - High-performance vector similarity search engine with rich payload filtering for agent memory.
@@ -224,7 +225,6 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Agent Bounties](https://github.com/NSPG13/agent-bounties) `🔬` `[Rust]` `[MCP]` - Coordinates verifiable digital bounty workflows designed for agents to post, fund, claim, solve, verify, and earn.
 - [AgentDock](https://github.com/agentdock/agentdock) `🚀` `[Python]` `[Docker]` - Framework for building and deploying production-ready AI agents with composable node architecture.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) `🚀` `[Python]` `[OpenAI]` - Bash CLI for switching OpenAI Codex CLI and Desktop profiles with isolated CODEX_HOME directories.
-- [Agent Island](https://github.com/tristan666666/agent-island) `🔬` `[Swift]` `[Observability]` - Menu bar and notch companion showing live session state and your-turn alerts for Claude Code, Codex, Antigravity, Grok and Cursor, with quota and cost computed locally.
 - [CompozyOS](https://github.com/compozy/compozy) `🚀` `[Go]` `[Multi-Agent]` - Runs agent CLIs as a team on loops and schedules, with shared memory, permissions and approvals in one self-hosted daemon.
 - [Crawl4AI](https://github.com/unclecode/crawl4ai) `🌱` `[Python]` `[Multi-Agent]` - Extracts structured data from web pages using LLM-friendly output formats optimized for agent ingestion.
 - [Docling](https://github.com/docling-project/docling) `🌱` `[Python]` `[IDE]` - Parses PDFs, DOCX, and slides into structured text with deep layout understanding for document agents.
