@@ -369,7 +369,7 @@ Notes: Several of these projects already appear elsewhere in this document (agen
 
 ## Industry-Specific Agents
 
-Curated list of vertical agent solutions for finance, healthcare, legal, manufacturing, and government.
+Curated list of vertical agent solutions for finance, healthcare, legal, manufacturing, retail, and government.
 
 ### Finance
 
@@ -399,7 +399,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Retail
 
-- [Duvo](https://www.duvo.ai) `🔬` `[Cloud]` `[Pipeline]` - Execution platform for grocery and retail operations across store, replenishment, and existing systems.
+- [Duvo](https://www.duvo.ai) `🔬` `[Cloud]` `[Pipeline]` - Execution platform for grocery and retail operations across stores, replenishment, and existing systems.
 
 ### Government & Compliance
 
