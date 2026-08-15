@@ -370,7 +370,7 @@ Notes: Several of these projects already appear elsewhere in this document (agen
 
 ## Industry-Specific Agents
 
-Curated list of vertical agent solutions for finance, healthcare, legal, manufacturing, and government.
+Curated list of vertical agent solutions for finance, healthcare, legal, manufacturing, retail, and government.
 
 ### Finance
 
@@ -397,6 +397,10 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 - [Siemens AI Ops](https://www.siemens.com/en-us/) `🚀` `[Cloud]` `[Multi-Agent]` - Factory-floor optimization and predictive maintenance agents.
 - [GE Predix Agents](https://www.ge.com/) `🚀` `[Cloud]` `[IDE]` - Equipment monitoring and incident prediction agents for industrial fleets.
+
+### Retail
+
+- [Duvo](https://www.duvo.ai) `🔬` `[Cloud]` `[Pipeline]` - Execution platform for grocery and retail operations across stores, replenishment, and existing systems.
 
 ### Government & Compliance
 
