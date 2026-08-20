@@ -330,6 +330,7 @@ Frontend workspaces and chat interfaces with built-in agent plugins and tool-use
 - [OpenHuman](https://github.com/tinyhumansai/openhuman) `🚀` `[Rust]` `[Memory]` - Self-hosted local-first personal AI assistant with a Rust core, desktop apps, knowledge-graph memory, skills, voice, and multi-channel messaging.
 - [Orkas](https://github.com/Orkas-AI/Orkas) `🔬` `[Desktop]` `[Multi-Agent]` - Runs parallel AI agents in a local-first desktop workspace with shared files, BYOK providers, and optional sync.
 - [OpenWebUI](https://github.com/open-webui/open-webui) `🌱` `[TypeScript]` `[RAG]` - Extensible local AI interface with built-in RAG, tool use, and support for multi-agent workflows.
+- [FutureOS](https://github.com/futuregene/future-os) `🔬` `[Rust]` `[CLI]` - One approval-gated AI agent spanning terminal, desktop, mobile, and chat clients on a shared local Rust backend.
 - [lucinate](https://github.com/lucinate-ai/lucinate) `🌱` `[Go]` `[TUI]` - Multi-backend terminal AI chat client for OpenClaw, Hermes, Ollama, and OpenAI-compatible APIs with routines, multi-agent switching, and local agent skills.
 
 ## Agent Deployment and Hosting
