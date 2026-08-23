@@ -36,6 +36,8 @@ jobs:
             --exclude "servicenow.com"
             --exclude "agentage.io"
             --exclude "agentwork-api.yfoob.chatgpt.site"
+            --exclude "theagentsindex.com"
+            --exclude "notfair.co"
             --timeout 30
             README.md
           fail: true
