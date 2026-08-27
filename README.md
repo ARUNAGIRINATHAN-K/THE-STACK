@@ -228,6 +228,7 @@ The protocol layer that enables agents to discover tools, communicate with each 
 
 Sandboxes, web scrapers, browser automation, and networking layers that agents depend on.
 
+- [1Claw](https://github.com/1clawAI/1claw-mcp) `🚀` `[TypeScript]` `[MCP]` - HSM-backed secret management for AI agents: scoped, short-lived, revocable tokens so raw keys never touch the model context, env, or logs. Also keyless multi-chain signing and prompt-injection inspection.
 - [Agent Bounties](https://github.com/NSPG13/agent-bounties) `🔬` `[Rust]` `[MCP]` - Coordinates verifiable digital bounty workflows designed for agents to post, fund, claim, solve, verify, and earn.
 - [AgentDock](https://github.com/agentdock/agentdock) `🚀` `[Python]` `[Docker]` - Framework for building and deploying production-ready AI agents with composable node architecture.
 - [agent-qa](https://github.com/vostride/agent-qa) `🌱` `[TypeScript]` `[Testing]` - Runs natural-language web and mobile tests with persistent memory and UI-change adaptation.
