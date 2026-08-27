@@ -163,6 +163,7 @@
 
 ## Multi-Agent Systems
 
+- [agentsparty](https://github.com/qnbhd/agentsparty) `🔬` `[Python]` `[Multi-Agent]` - Protocol-first agent orchestration where each participant follows a projection of one global protocol.
 - [AgentVerse](https://github.com/OpenBMB/AgentVerse) `🌱` `[Python]` `[Multi-Agent]` - Framework for building custom multi-agent environments to accomplish collaborative tasks.
 - [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) `🌱` `[Python]` `[Multi-Agent]` - Evaluates and evolves agentic workflows over time using automatic optimization.
 - [Hivekeep](https://github.com/MarlBurroW/hivekeep) `🔬` `[TypeScript]` `[Multi-Agent]` - Runs a team of specialized self-hosted agents that collaborate, share memory, and build their own tools.
