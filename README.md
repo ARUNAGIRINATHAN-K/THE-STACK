@@ -785,7 +785,7 @@ Tools for running LLMs locally and self-hosting AI agent platforms with full pri
 - [LocalAI](https://github.com/mudler/LocalAI) `🚀` `[Go]` `[OpenAI]` - Drop-in OpenAI API replacement that runs models locally without requiring a GPU.
 - [Ollama](https://github.com/ollama/ollama) `🚀` `[Go]` `[GitHub]` - Run LLMs locally with a dead-simple CLI interface and 162K+ GitHub stars.
 - [RustFox](https://github.com/chinkan/RustFox) `🔬` `[Rust]` `[MCP]` - Self-hosted Telegram AI assistant written in Rust with sandboxed tool execution, MCP integration, and multi-agent orchestration.
-- [SARA](https://github.com/Alessandro114/sara) `🔬` `[TypeScript]` `[Self-Hosted]` - Open-source multi-tenant WhatsApp AI assistant with 20 industry verticals, tool calling, and AGPL-3.0 license.
+- [SARA](https://github.com/Alessandro114/sara) `🔬` `[TypeScript]` `[Self-Hosted]` - Open-source WhatsApp AI assistant with 20 industry verticals, tool calling, and AGPL-3.0 license.
 - [vLLM](https://github.com/vllm-project/vllm) `🚀` `[Python]` `[Local]` - High-throughput LLM serving engine with PagedAttention for production-grade local inference.
 - [Yao Agents](https://github.com/YaoApp/yao) `🌱` `[Go]` `[MCP]` - Local-first AI execution platform with Docker sandbox isolation, BYOK model configuration, MCP support, 5-stage Pipeline, and multi-platform messaging via WeChat, Feishu, DingTalk, Telegram, and Discord.
 
