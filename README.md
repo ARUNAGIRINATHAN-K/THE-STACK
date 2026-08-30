@@ -168,6 +168,7 @@
 - [Hivekeep](https://github.com/MarlBurroW/hivekeep) `🔬` `[TypeScript]` `[Multi-Agent]` - Runs a team of specialized self-hosted agents that collaborate, share memory, and build their own tools.
 - [Hivemoot](https://github.com/hivemoot/hivemoot) `🚀` `[Python]` `[GitHub]` - Autonomous agent teams that collaboratively build software on GitHub.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) `🌱` `[Python]` `[Multi-Agent]` - Simulates a full software company workflow from requirements to PRs using role-playing agents.
+- [NEX Agent Co.](https://github.com/NEXAITECHAU) `🚀` `[Python]` `[Multi-Agent]` - Production autonomous AI agent company running 9 specialized workers (scout, code, research, audit, fleet, yield) on Apple M5 Max 128GB with 7 Ollama models. Files GitHub bounty PRs ($86K pipeline), serves x402 paid inference on Base USDC. 24/7 since 2026-08-01.
 - [NarraNexus](https://github.com/NetMindAI-Open/NarraNexus) `🌱` `[Python]` `[Multi-Agent]` - Ready-to-run AI agent team workspace by NetMind.AI whose agents remember, collaborate, and use tools from day one.
 - [P2PCLAW](https://github.com/Agnuxo1/OpenCLAW-P2P) `🌱` `[Python]` `[RAG]` - Decentralized scientific research network with 14+ autonomous agents featuring P2P mesh, IPFS storage, and Lean 4 formal verification, self-hosted with Docker Compose.
 - [Swarm](https://github.com/openai/swarm) `🚀` `[Python]` `[OpenAI]` - Lightweight framework for agent handoffs, context variables, and function calling patterns from OpenAI.
