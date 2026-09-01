@@ -229,6 +229,7 @@ The protocol layer that enables agents to discover tools, communicate with each 
 Sandboxes, web scrapers, browser automation, and networking layers that agents depend on.
 
 - [Agent Bounties](https://github.com/NSPG13/agent-bounties) `🔬` `[Rust]` `[MCP]` - Coordinates verifiable digital bounty workflows designed for agents to post, fund, claim, solve, verify, and earn.
+- [AgentBridge](https://github.com/raysonmeng/agent-bridge) `🔬` `[TypeScript]` `[Multi-Agent]` - Keeps Claude Code and Codex as live local peers for mid-turn review and quota-boundary handoff.
 - [AgentDock](https://github.com/agentdock/agentdock) `🚀` `[Python]` `[Docker]` - Framework for building and deploying production-ready AI agents with composable node architecture.
 - [agent-qa](https://github.com/vostride/agent-qa) `🌱` `[TypeScript]` `[Testing]` - Runs natural-language web and mobile tests with persistent memory and UI-change adaptation.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) `🚀` `[Python]` `[OpenAI]` - Bash CLI for switching OpenAI Codex CLI and Desktop profiles with isolated CODEX_HOME directories.
