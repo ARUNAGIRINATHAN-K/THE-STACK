@@ -451,6 +451,7 @@ Capabilities that let agents send messages, notifications, and reports across ch
 
 Frameworks for orchestrating data transformations and long-running agent-driven workflows.
 
+- [Agent Coordinator](https://github.com/alanhoff/agent-coordinator) `🔬` `[Python]` `[OpenAI]` - Resumes complex Codex workflows from local state and reconciles uncertain work before retrying.
 - [AI for Database](https://www.aifordatabase.com) `🌱` `[Cloud]` `[Database]` - Connects to any database for plain English queries with self-refreshing dashboards and automated workflows.
 - [Burr](https://github.com/apache/burr) `🌱` `[Python]` `[Observability]` - Tracks and manages multi-step agent state machines with built-in observability and persistence.
 - [Dagster](https://github.com/dagster-io/dagster) `🌱` `[Python]` `[Pipeline]` - Manages data assets and pipelines with built-in lineage tracking for data-intensive agent systems.
