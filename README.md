@@ -295,6 +295,7 @@ Sandboxes, web scrapers, browser automation, and networking layers that agents d
 - [Patronus AI LYNX](https://patronus.ai/) `🌱` `[Cloud]` `[Testing]` - Hallucination detection system beating GPT-4 baselines, with specialized testing for agent outputs and LLM-generated content quality.
 - [Arize Phoenix](https://github.com/Arize-ai/phoenix) `🌱` `[Python]` `[Observability]` - Open-source observability platform built on OpenTelemetry for tracing, evaluating, and debugging AI agents.
 - [Braintrust](https://www.braintrust.dev) `🌱` `[TypeScript]` `[Evaluation]` - Eval-driven development platform with experiment tracking and prompt optimization for agent quality.
+- [ClawMetry](https://github.com/vivekchand/clawmetry) `🔬` `[Python]` `[Observability]` - Self-hosted observability and kill switch for coding agents, reading the session logs runtimes already write to disk.
 - [ElevenAgents](https://elevenlabs.io/agents) `🚀` `[Cloud]` `[Voice]` - Voice agent platform from ElevenLabs for customer support automation with HIPAA compliance and multi-language support.
 - [DriftGuard](https://github.com/sujal-maheshwari2004/DriftGuard) `🌱` `[Python]` `[Multi-Agent]` - Semantic memory guardrails using causal graphs to prevent agents from repeating past failures.
 - [Galley](https://github.com/shinpr/galley) `🔬` `[Go]` `[Multi-Agent]` - Pairs independently configured executors and supervisors with repository-defined quality gates and inspectable evidence for each coding attempt.
