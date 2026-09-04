@@ -10,6 +10,7 @@ All notable changes to this list will be documented here.
 
 | Date | Change |
 |---|---|
+| September 04 2026 | **Link audit** — Updated redirected URL for EvoAgentX and removed dead Better Agent entry. |
 | July 22 2026 | **Link audit** — Updated 7 redirected URLs (Open Interpreter, Remio, Toolhouse, Pilot Protocol, LLMGraph, Agent Learning Kit, Lavender) and removed the dead Agent Starter entry. |
 | June 26 2026 | **Style reformatting** — Converted all 407 tool entries to the new compact format: `` `TIER` `[Language]` `[Type]` `` replacing the legacy `(🏷️ ...)` tag style. Tier badges (`🚀` Production-Ready, `🌱` Growing, `🔬` Emerging) applied consistently across all sections. Descriptions trimmed to one clear sentence, promotional language removed. Zero duplicate links. Full awesome-lint structural compliance maintained. |
 | June 07 2026 | Performed link audit: fixed redirected URLs (including Bland AI, Podman, Strands Agents, Google ADK, Mistral, Railway, Sistava, Windsurf, Nuance, ADK loop-agents), updated Project Glasswing to correct official link, and removed dead TinyTools link. |
