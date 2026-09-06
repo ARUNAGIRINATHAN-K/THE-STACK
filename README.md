@@ -49,6 +49,7 @@ npm install && npm run build:data && npm run dev
 
 ## Orchestration Frameworks
 
+- [aeon](https://github.com/aeonfun/aeon) `🚀` `[TypeScript]` `[GitHub Actions]` - Autonomous agent framework that runs unattended on GitHub Actions, dispatching Markdown skills across ten coding-agent harnesses (Claude Code, Codex, Grok) with 1-5 quality scoring, git-persisted memory, and a self-healing repair loop.
 - [Agency Swarm](https://github.com/VRSEN/agency-swarm) `🚀` `[Python]` `[Multi-Agent]` - Orchestrates multi-agent systems built on the OpenAI Assistants API with role-based collaboration.
 - [AgentDescent](https://github.com/Birfy/agentdescent) `🔬` `[Python]` `[Research]` - Evolves agent skills, prompts, and harness modules by merging diffs from parallel workers against held-out reward.
 - [AgentScope](https://github.com/agentscope-ai/agentscope) `🚀` `[Python]` `[Multi-Agent]` - Alibaba multi-agent framework with distributed deployment and fault tolerance for production use.
