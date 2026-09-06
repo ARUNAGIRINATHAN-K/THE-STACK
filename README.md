@@ -60,6 +60,7 @@
 ## Orchestration Frameworks
 
 - [Agency Swarm](https://github.com/VRSEN/agency-swarm) `🚀` `[Python]` `[Multi-Agent]` - Orchestrates multi-agent systems built on the OpenAI Assistants API with role-based collaboration.
+- [AgentDescent](https://github.com/Birfy/agentdescent) `🔬` `[Python]` `[Research]` - Evolves agent skills, prompts, and harness modules by merging diffs from parallel workers against held-out reward.
 - [AgentScope](https://github.com/agentscope-ai/agentscope) `🚀` `[Python]` `[Multi-Agent]` - Alibaba multi-agent framework with distributed deployment and fault tolerance for production use.
 - [Agno](https://github.com/agno-agi/agno) `🌱` `[Python]` `[Multi-Agent]` - Multi-agent framework with a runtime and control plane for managing agent deployments at scale.
 - [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-python) `🚀` `[Python]` `[Anthropic]` - Official Claude SDK with tool use, computer control, and streaming for building Claude-native agents.
@@ -334,6 +335,7 @@ Frontend workspaces and chat interfaces with built-in agent plugins and tool-use
 - [OpenWebUI](https://github.com/open-webui/open-webui) `🌱` `[TypeScript]` `[RAG]` - Extensible local AI interface with built-in RAG, tool use, and support for multi-agent workflows.
 - [FutureOS](https://github.com/futuregene/future-os) `🔬` `[Rust]` `[CLI]` - One approval-gated AI agent spanning terminal, desktop, mobile, and chat clients on a shared local Rust backend.
 - [lucinate](https://github.com/lucinate-ai/lucinate) `🌱` `[Go]` `[TUI]` - Multi-backend terminal AI chat client for OpenClaw, Hermes, Ollama, and OpenAI-compatible APIs with routines, multi-agent switching, and local agent skills.
+- [Vicoa](https://github.com/vicoa-ai/vicoa) `🔬` `[Desktop]` `[Multi-Agent]` - Agentic IDE orchestrating a team of coding agents from desktop, web, or mobile with real-time sync.
 
 ## Agent Deployment and Hosting
 
@@ -648,7 +650,6 @@ AI platforms that conduct autonomous multi-step research, synthesize findings fr
 - [DeerFlow](https://github.com/bytedance/deer-flow) `🚀` `[Python]` `[Multi-Agent]` - Multi-agent research system from ByteDance with planning and execution loops for autonomous investigation.
 - [Gemini Deep Research](https://blog.google/products-and-platforms/products/gemini/google-gemini-deep-research/) `🚀` `[Cloud]` `[RAG]` - Leverages Google Search and Knowledge Graph integration with 1M token context for breadth-first research.
 - [Perplexity Pro](https://www.perplexity.ai) `🌱` `[Cloud]` `[IDE]` - Provides real-time search answers with inline citations and follow-up threads for iterative research.
-- [Perplexity Personal Computer](https://www.perplexity.ai/pc) `🌱` `[Cloud]` `[Vision]` - Autonomous research agent with vision capabilities, real-time search integration, and document analysis for comprehensive research workflows.
 - [Superhighway](https://superhighway.walls.sh) `🌱` `[Python]` `[IDE]` - Web search API for agents (search, news, scrape, research) with a Python guide for building an academic [literature-review agent](https://superhighway.walls.sh/guides/academic-research-agent).
 
 ## Prompt-to-App Builders

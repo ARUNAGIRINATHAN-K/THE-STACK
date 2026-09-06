@@ -38,6 +38,7 @@ jobs:
             --exclude "agentwork-api.yfoob.chatgpt.site"
             --exclude "theagentsindex.com"
             --exclude "notfair.co"
+            --exclude "lexisnexis.com"
             --timeout 30
             README.md
           fail: true
