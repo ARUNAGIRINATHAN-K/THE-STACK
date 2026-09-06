@@ -101,7 +101,7 @@ Before submitting PRs or finalizing changes:
   ```
 - Check spelling using `codespell`:
   ```bash
-  codespell -q 3 --skip=.git,node_modules --check-filenames --ignore-words-list="reworkd,EHR" .
+  codespell -q 3 --skip=.git,node_modules --check-filenames --ignore-words-list=reworkd,ehr,EHR .
   ```
 - Run `awesome-lint` validator:
   ```bash

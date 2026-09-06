@@ -90,7 +90,7 @@ npx awesome-lint
 
 ### 3. Check Spelling
 ```bash
-codespell -q 3 --skip=.git,node_modules,.next --check-filenames --ignore-words-list="reworkd,EHR" .
+codespell -q 3 --skip=.git,node_modules,.next --check-filenames --ignore-words-list=reworkd,ehr,EHR .
 ```
 
 ---
