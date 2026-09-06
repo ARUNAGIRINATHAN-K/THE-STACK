@@ -86,6 +86,7 @@
 - [OpenProgram](https://github.com/Fzkuji/OpenProgram) `🔬` `[Python]` `[Multi-Agent]` - Self-programming framework whose agents create, run, and refine workflows across models, tools, memory, and context.
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) `🚀` `[Python]` `[MCP]` - Production multi-agent framework with self-reflection, MCP integration, and workflow automation.
 - [PydanticAI](https://github.com/pydantic/pydantic-ai) `🌱` `[Python]` `[Pydantic]` - Type-safe agent framework from the Pydantic team with a FastAPI-style developer experience.
+- [ReadyAgents](https://github.com/readyagents/readyagents-core) `🔬` `[Python]` `[MCP]` - Local one-shot YAML/JSON agent workflow CLI with tools, approvals, resume, and optional stdio MCP.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) `🚀` `[C#]` `[Microsoft]` - Microsoft enterprise SDK for Python, C#, and Java with modular plugins, memory, and goal planning.
 - [Smolagents](https://github.com/huggingface/smolagents) `🌱` `[Python]` `[Research]` - Hugging Face code-first framework where agents write and execute Python instead of JSON tool calls.
 - [Strands Agents SDK](https://github.com/strands-agents/harness-sdk) `🌱` `[Python]` `[AWS]` - AWS model-driven agent SDK with native Bedrock integration.
