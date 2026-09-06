@@ -148,6 +148,7 @@ npm install && npm run build:data && npm run dev
 - [Tabnine](https://www.tabnine.com) `🚀` `[TypeScript]` `[IDE]` - Privacy-first AI code completion with on-premise deployment and codebase fine-tuning options.
 - [TaskWeaver](https://github.com/microsoft/TaskWeaver) `🚀` `[Python]` `[Microsoft]` - A code-first agent framework from Microsoft for planning and executing data analytics tasks.
 - [Windsurf](https://devin.ai/desktop) `🌱` `[TypeScript]` `[IDE]` - AI-native IDE with Cascade agent for multi-step autonomous tasks and team workflows.
+- [YYLO](https://github.com/yylo-dev/yylo) `🔬` `[Python]` `[Multi-Agent]` - Command-line orchestrator for coding agents with typed task, validation, merge, and release-readiness boundaries in a dedicated branch/worktree.
 
 ## Memory and Context
 
