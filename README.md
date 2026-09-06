@@ -649,7 +649,6 @@ AI platforms that conduct autonomous multi-step research, synthesize findings fr
 - [DeerFlow](https://github.com/bytedance/deer-flow) `🚀` `[Python]` `[Multi-Agent]` - Multi-agent research system from ByteDance with planning and execution loops for autonomous investigation.
 - [Gemini Deep Research](https://blog.google/products-and-platforms/products/gemini/google-gemini-deep-research/) `🚀` `[Cloud]` `[RAG]` - Leverages Google Search and Knowledge Graph integration with 1M token context for breadth-first research.
 - [Perplexity Pro](https://www.perplexity.ai) `🌱` `[Cloud]` `[IDE]` - Provides real-time search answers with inline citations and follow-up threads for iterative research.
-- [Perplexity Personal Computer](https://www.perplexity.ai/pc) `🌱` `[Cloud]` `[Vision]` - Autonomous research agent with vision capabilities, real-time search integration, and document analysis for comprehensive research workflows.
 - [Superhighway](https://superhighway.walls.sh) `🌱` `[Python]` `[IDE]` - Web search API for agents (search, news, scrape, research) with a Python guide for building an academic [literature-review agent](https://superhighway.walls.sh/guides/academic-research-agent).
 
 ## Prompt-to-App Builders
