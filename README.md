@@ -10,52 +10,42 @@
 [![Last Commit](https://img.shields.io/github/last-commit/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/commits/main)
 ![Tools Listed](https://img.shields.io/badge/tools_listed-470%2B-blue?style=flat-square)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](LICENSE)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents)
 
 *The most comprehensive, structured guide to AI agent frameworks, tools, and resources.*  
 *Updated weekly. Compared side-by-side. Built for developers who ship.*
 
-**[Explore the Stack](#contents) • Read the docs in CONTRIBUTING.md • [Submit a Tool](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues)**
+**[Explore the Stack](#contents) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](CONTRIBUTING.md) • [Agent Guide](AGENT.md) • [Security Policy](SECURITY.md)**
 
 </div>
 
 ## Contents
 
-- [Orchestration Frameworks](#orchestration-frameworks)
-- [Coding Agents](#coding-agents)
-- [Memory and Context](#memory-and-context)
-- [Multi-Agent Systems](#multi-agent-systems)
-- [Agent Communication Protocols](#agent-communication-protocols)
-- [Browser and Computer Use Agents](#browser-and-computer-use-agents)
-- [Agent Tooling and Infrastructure](#agent-tooling-and-infrastructure)
-- [Low and No-Code Builders](#low-and-no-code-builders)
-- [Voice and Multimodal Agents](#voice-and-multimodal-agents)
-- [Safety Guardrails and Observability](#safety-guardrails-and-observability)
-- [Agent Interfaces and UIs](#agent-interfaces-and-uis)
-- [Agent Deployment and Hosting](#agent-deployment-and-hosting)
-- [Agent Evaluation and Benchmarks](#agent-evaluation-and-benchmarks)
-- [Agent Testing & Debugging](#agent-testing--debugging)
-- [Industry-Specific Agents](#industry-specific-agents)
-- [Learning Resources](#learning-resources)
-- [Agent Communication](#agent-communication)
-- [Data Pipeline and Workflow](#data-pipeline-and-workflow)
-- [Secure Execution Environments](#secure-execution-environments)
-- [Creative AI Agents](#creative-ai-agents)
-- [Customer Support and CRM Agents](#customer-support-and-crm-agents)
-- [Voice Agent Platforms](#voice-agent-platforms)
-- [Deep Research Agents](#deep-research-agents)
-- [Prompt-to-App Builders](#prompt-to-app-builders)
-- [Multi-Agent Consumer Platforms](#multi-agent-consumer-platforms)
-- [Open-Source Models for Agents](#open-source-models-for-agents)
-- [Market Stats and Benchmarks 2026](#market-stats-and-benchmarks-2026)
-- [Local and Self-Hosted AI](#local-and-self-hosted-ai)
-- [AI Governance and Compliance](#ai-governance-and-compliance)
-- [Cybersecurity Agents](#cybersecurity-agents)
-- [Healthcare and Therapy Agents](#healthcare-and-therapy-agents)
-- [Newsletters and Communities](#newsletters-and-communities)
-- [Changelog](#changelog)
-- [Star History](#star-history)
+| | | | | | |
+|---|---|---|---|---|---|
+| [Orchestration Frameworks](#orchestration-frameworks) | [Coding Agents](#coding-agents) | [Memory and Context](#memory-and-context) | [Multi-Agent Systems](#multi-agent-systems) | [Agent Communication Protocols](#agent-communication-protocols) | [Browser and Computer Use Agents](#browser-and-computer-use-agents) |
+| [Agent Tooling and Infrastructure](#agent-tooling-and-infrastructure) | [Low and No-Code Builders](#low-and-no-code-builders) | [Voice and Multimodal Agents](#voice-and-multimodal-agents) | [Safety Guardrails and Observability](#safety-guardrails-and-observability) | [Agent Interfaces and UIs](#agent-interfaces-and-uis) | [Agent Deployment and Hosting](#agent-deployment-and-hosting) |
+| [Agent Evaluation and Benchmarks](#agent-evaluation-and-benchmarks) | [Agent Testing & Debugging](#agent-testing--debugging) | [Industry-Specific Agents](#industry-specific-agents) | [Learning Resources](#learning-resources) | [Agent Communication](#agent-communication) | [Data Pipeline and Workflow](#data-pipeline-and-workflow) |
+| [Secure Execution Environments](#secure-execution-environments) | [Creative AI Agents](#creative-ai-agents) | [Customer Support and CRM Agents](#customer-support-and-crm-agents) | [Voice Agent Platforms](#voice-agent-platforms) | [Deep Research Agents](#deep-research-agents) | [Prompt-to-App Builders](#prompt-to-app-builders) |
+| [Multi-Agent Consumer Platforms](#multi-agent-consumer-platforms) | [Open-Source Models for Agents](#open-source-models-for-agents) | [Market Stats and Benchmarks 2026](#market-stats-and-benchmarks-2026) | [Local and Self-Hosted AI](#local-and-self-hosted-ai) | [AI Governance and Compliance](#ai-governance-and-compliance) | [Cybersecurity Agents](#cybersecurity-agents) |
+| [Healthcare and Therapy Agents](#healthcare-and-therapy-agents) | [Newsletters and Communities](#newsletters-and-communities) | [Experience Intent Libraries](#experience-intent-libraries) | [Interactive Web Application](#interactive-web-application) | [Changelog](#changelog) | [Star History](#star-history) |
 
-![agent](img/agent.png) ![loop](img/loop.png)
+---
+
+## AI Registry Explorer
+
+Interactive Next.js 14 web application for searching, filtering, and exploring AI agents, frameworks, and infrastructure tools.
+
+### Quick Start
+```bash
+npm install && npm run build:data && npm run dev
+```
+
+- **Local Web App**: `http://localhost:3000`
+- **Docker**: `docker compose up --build`
+- **One-Click Deploy**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents)
+
+---
 
 ## Orchestration Frameworks
 

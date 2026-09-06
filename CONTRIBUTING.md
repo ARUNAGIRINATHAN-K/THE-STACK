@@ -151,7 +151,25 @@ Current categories:
 3. **Verify** the link works, your entry follows the format above, and the URL does not already appear elsewhere in the list
 4. **Submit** a pull request with a clear title: `Add [Tool Name] to [Category]`
 
-The maintainers will review your PR within a few days. We may suggest edits to the description, tier, tags, or category.
+## Web Application & Dataset Build
+
+The repository includes an interactive Next.js 14 web application for searching, filtering, and exploring the registry.
+
+When adding or updating entries in `README.md`, recompile the static dataset and test the web app:
+
+```bash
+# 1. Compile README.md into static normalized JSON datasets
+npm run build:data
+
+# 2. Start Next.js development server
+npm run dev
+
+# 3. Validate production build
+npm run build
+
+# 4. (Optional) Test containerized build
+docker compose up --build
+```
 
 ---
 

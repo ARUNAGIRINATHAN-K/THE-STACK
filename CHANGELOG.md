@@ -10,6 +10,7 @@ All notable changes to this list will be documented here.
 
 | Date | Change |
 |---|---|
+| September 06 2026 | **AI Agent Registry Web App (Phase 2)** — Launched developer-focused Next.js 14 App Router interactive registry frontend. Added full-text client search, multi-faceted filtering (category, tier, runtime language, platform), static JSON dataset compilation (`scripts/build-data.js`), Docker multi-stage containerization, and responsive Minimal Style layout with dark/light theme support. |
 | September 04 2026 | **Link audit** — Updated redirected URL for EvoAgentX and removed dead Better Agent entry. |
 | July 22 2026 | **Link audit** — Updated 7 redirected URLs (Open Interpreter, Remio, Toolhouse, Pilot Protocol, LLMGraph, Agent Learning Kit, Lavender) and removed the dead Agent Starter entry. |
 | June 26 2026 | **Style reformatting** — Converted all 407 tool entries to the new compact format: `` `TIER` `[Language]` `[Type]` `` replacing the legacy `(🏷️ ...)` tag style. Tier badges (`🚀` Production-Ready, `🌱` Growing, `🔬` Emerging) applied consistently across all sections. Descriptions trimmed to one clear sentence, promotional language removed. Zero duplicate links. Full awesome-lint structural compliance maintained. |
