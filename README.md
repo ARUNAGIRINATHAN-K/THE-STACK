@@ -15,7 +15,7 @@
 *The most comprehensive, structured guide to AI agent frameworks, tools, and resources.*  
 *Updated weekly. Compared side-by-side. Built for developers who ship.*
 
-**[Explore the Stack](#contents) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](CONTRIBUTING.md) • [Agent Guide](AGENT.md) • [Security Policy](SECURITY.md)**
+**[Explore the Stack](#contents) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](#contributing) • [Agent Guide](AGENT.md) • [Security Policy](SECURITY.md)**
 
 </div>
 
