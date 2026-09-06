@@ -26,7 +26,7 @@ jobs:
 
       - name: Check English in docs and comments
         # Added EHR to the ignore-words-list below
-        run: codespell -q 3 --skip=.git,node_modules --check-filenames --ignore-words-list="reworkd,EHR" .
+        run: codespell -q 3 --skip=.git,node_modules --check-filenames --ignore-words-list=reworkd,ehr,EHR .
 
       - name: Install dependencies
         run: npm install

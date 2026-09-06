@@ -1,10 +1,36 @@
 {
   "name": "awesome-ai-agents",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": true,
   "description": "Awesome list of AI agent frameworks, tools and resources",
   "repository": {
     "type": "git",
     "url": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/build-data.js && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:data": "node scripts/build-data.js"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.378.0",
+    "next": "^14.2.3",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   },
   "license": "CC0-1.0"
 }
