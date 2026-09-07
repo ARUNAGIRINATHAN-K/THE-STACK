@@ -324,7 +324,6 @@ Frontend workspaces and chat interfaces with built-in agent plugins and tool-use
 
 - [AionUi](https://github.com/iOfficeAI/AionUi) `🚀` `[Desktop]` `[Multi-Agent]` - Connects 20+ AI CLIs and any API key in a local, open-source multi-agent desktop workspace.
 - [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) `🌱` `[TypeScript]` `[RAG]` - All-in-one AI application with RAG, agents, and multi-model support for desktop and Docker.
-- [Better Agent](https://github.com/ofekron/better-agent) `🔬` `[Desktop]` `[Multi-Agent]` - Manages Claude, Codex, and Gemini coding-agent sessions with parallel forks, delegation, persistence, and restart recovery.
 - [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) `🌱` `[Python]` `[Database]` - Data interaction platform with local LLM support for 100% private database and analytics agents.
 - [LibreChat](https://github.com/danny-avila/LibreChat) `🌱` `[TypeScript]` `[IDE]` - Self-hosted multi-model chat interface supporting all major AI providers with access control.
 - [LobeHub](https://lobehub.com/) `🌱` `[TypeScript]` `[Multi-Agent]` - Modern platform for hybrid work and AI-driven collaboration with extensible agent teams and rapid integration.
@@ -395,7 +394,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Legal
 
-- [LexisNexis AI](https://www.lexisnexis.com/en-us/gateway.page) `🚀` `[Cloud]` `[Research]` - Document review and legal research agents.
+- [LexisNexis AI](https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page) `🚀` `[Cloud]` `[Research]` - Document review and legal research agents.
 - [Westlaw AI-Assisted Research](https://legal.thomsonreuters.com/en/westlaw) `🚀` `[Cloud]` `[Multi-Agent]` - Case law analysis and brief drafting agents.
 - [ROSS Intelligence](https://blog.rossintelligence.com/) `🌱` `[Cloud]` `[Research]` - Contract analysis and legal research agents.
 
