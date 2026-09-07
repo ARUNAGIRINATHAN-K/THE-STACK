@@ -18,7 +18,7 @@ export function Footer() {
             Categories
           </Link>
           <a
-            href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents"
+            href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground underline"

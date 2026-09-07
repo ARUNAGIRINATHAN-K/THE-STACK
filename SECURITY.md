@@ -20,7 +20,7 @@ If you discover that a tool or resource listed in this repository:
 
 ### How to Flag an Unsafe Tool
 
-- **Urgent / Malicious Tool Flags**: Create an issue on GitHub using the `[SECURITY]` prefix in the title, use [GitHub Private Vulnerability Reporting](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents/security/advisories/new), or open a issue requesting removal.
+- **Urgent / Malicious Tool Flags**: Create an issue on GitHub using the `[SECURITY]` prefix in the title, use [GitHub Private Vulnerability Reporting](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/security/advisories/new), or open a issue requesting removal.
 - Please include:
   - **Tool Name & URL** as listed in `README.md`
   - **Type of threat / concern** (e.g., malicious release version, hijacked domain, credential leak)
@@ -36,7 +36,7 @@ If you discover that a tool or resource listed in this repository:
 If you find a security vulnerability within the repository infrastructure itself (such as GitHub Actions workflows, link-check scripts, or automated build pipelines):
 
 1. **Do NOT open a public GitHub issue.**
-2. Report the vulnerability privately via [GitHub Security Advisories](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents/security/advisories/new).
+2. Report the vulnerability privately via [GitHub Security Advisories](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/security/advisories/new).
 3. Provide sufficient detail to help us reproduce and address the issue promptly.
 
 ---

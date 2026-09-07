@@ -19,8 +19,8 @@ Ensure your development environment meets the following requirements:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents.git
-cd awesome-ai-agents
+git clone https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026.git
+cd awesome-ai-agents-2026
 ```
 
 ### Install Dependencies

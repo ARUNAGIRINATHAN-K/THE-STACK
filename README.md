@@ -404,9 +404,9 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Government & Compliance
 
-- [Anthropic Government Agents](https://www.anthropic.com/government) `🚀` `[Cloud]` `[Government]` - Policy analysis and public sector agents for regulated workflows.
+- [Anthropic Government Agents](https://www.anthropic.com) `🚀` `[Cloud]` `[Government]` - Policy analysis and public sector agents for regulated workflows.
 - [Leyna](https://www.atom.com/name/Leyna.ai) `🌱` `[Cloud]` `[Government]` - Public records request agent for government agencies to parse, redact, and track requests.
-- [Tax & Insurance Agent Platforms](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents) `🌱` `[Cloud]` `[Compliance]` - Compliance-focused tax and underwriting agents for regulated industries.
+- [Tax & Insurance Agent Platforms](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026) `🌱` `[Cloud]` `[Compliance]` - Compliance-focused tax and underwriting agents for regulated industries.
 
 ## Learning Resources
 
@@ -478,7 +478,6 @@ Infrastructure for running agent-generated code safely in isolated, sandboxed, o
 | AWS Lambda          | Firecracker VM     | ~200ms     | Python, TS, Go         |
 | Cloudflare Workers  | V8 isolate         | ~0ms       | TS, Rust (WebAssembly) |
 
-- [agentbox](https://github.com/agentbox/agentbox) `🌱` `[Python]` `[Docker]` - Containerized environment to package, test, version, and govern AI agents across frameworks.
 - [agentnotary](https://github.com/CharanBharathula/agentnotary) `🌱` `[Python]` `[CLI]` - Notarize, govern, and audit AI agents with cryptographic seals, runtime guards, and adversarial fuzzing.
 - [AWS Lambda](https://github.com/aws/aws-lambda-python-runtime-interface-client) `🚀` `[Python]` `[Serverless]` - Serverless function runtime with Firecracker isolation for executing short-lived agent tasks at scale.
 - [Cloudflare Workers](https://github.com/cloudflare/workers-sdk) `🌱` `[TypeScript]` `[Serverless]` - Ultra-low-latency V8-isolate serverless runtime at the edge for lightweight agent task execution.

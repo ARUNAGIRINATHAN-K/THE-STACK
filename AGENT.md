@@ -8,7 +8,7 @@
 
 **Awesome AI Agents** is a structured, production-focused catalog of 470+ AI agent frameworks, tools, protocol specs, evaluation benchmarks, and infrastructure projects across 32+ categories.
 
-- **Primary Repository**: [ARUNAGIRINATHAN-K/awesome-ai-agents](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents)
+- **Primary Repository**: [ARUNAGIRINATHAN-K/awesome-ai-agents-2026](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)
 - **Primary Data Source**: [README.md](file:///a:/awesome-ai-agents/README.md)
 - **Contribution Guidelines**: [CONTRIBUTING.md](file:///a:/awesome-ai-agents/CONTRIBUTING.md)
 - **Security Policy**: [SECURITY.md](file:///a:/awesome-ai-agents/SECURITY.md)
