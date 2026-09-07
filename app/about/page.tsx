@@ -18,7 +18,7 @@ export default function AboutPage() {
 
       <div className="space-y-4 font-sans text-muted-foreground leading-relaxed">
         <p>
-          The <strong>AI Agent Registry 2026</strong> is a developer-focused, searchable directory built on top of the curated <a href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents" target="_blank" rel="noopener noreferrer" className="text-foreground underline">Awesome AI Agents</a> dataset.
+          The <strong>AI Agent Registry 2026</strong> is a developer-focused, searchable directory built on top of the curated <a href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026" target="_blank" rel="noopener noreferrer" className="text-foreground underline">Awesome AI Agents</a> dataset.
         </p>
 
         <div className="p-4 rounded border border-border bg-card font-mono text-xs space-y-2 text-foreground">
@@ -42,7 +42,7 @@ export default function AboutPage() {
         <Link href="/explore" className="px-3 py-1.5 rounded border border-border bg-foreground text-background font-bold hover:opacity-90">
           Explore Registry →
         </Link>
-        <a href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        <a href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026" target="_blank" rel="noopener noreferrer" className="hover:underline">
           GitHub Repository ↗
         </a>
       </div>

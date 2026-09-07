@@ -42,7 +42,7 @@ It also applies when an individual is officially representing the project in pub
 
 ## Enforcement
 
-Instances of unacceptable behavior may be reported by opening a GitHub issue at [https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents/issues](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents/issues) and requesting confidentiality, or by contacting the maintainer directly.
+Instances of unacceptable behavior may be reported by opening a GitHub issue at [https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues) and requesting confidentiality, or by contacting the maintainer directly.
 
 All complaints will be reviewed and investigated promptly, fairly, and with respect for the reporter's privacy. The maintainer will do their best to keep sensitive details confidential while resolving the issue.
 

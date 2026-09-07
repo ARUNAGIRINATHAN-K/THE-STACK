@@ -151,6 +151,9 @@ Current categories:
 3. **Verify** the link works, your entry follows the format above, and the URL does not already appear elsewhere in the list
 4. **Submit** a pull request with a clear title: `Add [Tool Name] to [Category]`
 
+> [!NOTE]
+> **Vercel Preview Check Status**: If you see a Vercel check indicating `Authorization required to deploy` on your PR, this is a standard Vercel security policy for repository forks. GitHub Actions (`awesome-lint` & `npm run build`) automatically validates your PR code and dataset formatting. Maintainers will review and merge your PR directly.
+
 ## Web Application & Dataset Build
 
 The repository includes an interactive Next.js 14 web application for searching, filtering, and exploring the registry.

@@ -9,26 +9,54 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 [![Last Commit](https://img.shields.io/github/last-commit/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/commits/main)
 ![Tools Listed](https://img.shields.io/badge/tools_listed-470%2B-blue?style=flat-square)
+[![Live Registry](https://img.shields.io/website?url=https%3A%2F%2Fai-agent-registry-kappa.vercel.app%2F&up_message=online&label=registry&style=flat-square)](https://ai-agent-registry-kappa.vercel.app/)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](LICENSE)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents-2026)
 
 *The most comprehensive, structured guide to AI agent frameworks, tools, and resources.*  
 *Updated weekly. Compared side-by-side. Built for developers who ship.*
 
-**[Explore the Stack](#contents) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](#contributing) • [Agent Guide](AGENT.md) • [Security Policy](SECURITY.md)**
+**[Explore the Stack](#contents) • [Live App](https://ai-agent-registry-kappa.vercel.app/#live) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](#contributing) • [Agent Guide](AGENT.md)**
 
 </div>
 
 ## Contents
 
-| | | | | | |
-|---|---|---|---|---|---|
-| [Orchestration Frameworks](#orchestration-frameworks) | [Coding Agents](#coding-agents) | [Memory and Context](#memory-and-context) | [Multi-Agent Systems](#multi-agent-systems) | [Agent Communication Protocols](#agent-communication-protocols) | [Browser and Computer Use Agents](#browser-and-computer-use-agents) |
-| [Agent Tooling and Infrastructure](#agent-tooling-and-infrastructure) | [Low and No-Code Builders](#low-and-no-code-builders) | [Voice and Multimodal Agents](#voice-and-multimodal-agents) | [Safety Guardrails and Observability](#safety-guardrails-and-observability) | [Agent Interfaces and UIs](#agent-interfaces-and-uis) | [Agent Deployment and Hosting](#agent-deployment-and-hosting) |
-| [Agent Evaluation and Benchmarks](#agent-evaluation-and-benchmarks) | [Agent Testing & Debugging](#agent-testing--debugging) | [Industry-Specific Agents](#industry-specific-agents) | [Learning Resources](#learning-resources) | [Agent Communication](#agent-communication) | [Data Pipeline and Workflow](#data-pipeline-and-workflow) |
-| [Secure Execution Environments](#secure-execution-environments) | [Creative AI Agents](#creative-ai-agents) | [Customer Support and CRM Agents](#customer-support-and-crm-agents) | [Voice Agent Platforms](#voice-agent-platforms) | [Deep Research Agents](#deep-research-agents) | [Prompt-to-App Builders](#prompt-to-app-builders) |
-| [Multi-Agent Consumer Platforms](#multi-agent-consumer-platforms) | [Open-Source Models for Agents](#open-source-models-for-agents) | [Market Stats and Benchmarks 2026](#market-stats-and-benchmarks-2026) | [Local and Self-Hosted AI](#local-and-self-hosted-ai) | [AI Governance and Compliance](#ai-governance-and-compliance) | [Cybersecurity Agents](#cybersecurity-agents) |
-| [Healthcare and Therapy Agents](#healthcare-and-therapy-agents) | [Newsletters and Communities](#newsletters-and-communities) | [Experience Intent Libraries](#experience-intent-libraries) | [Interactive Web Application](#interactive-web-application) | [Changelog](#changelog) | [Star History](#star-history) |
+- [AI Registry Explorer](#ai-registry-explorer)
+- [Orchestration Frameworks](#orchestration-frameworks)
+- [Coding Agents](#coding-agents)
+- [Memory and Context](#memory-and-context)
+- [Multi-Agent Systems](#multi-agent-systems)
+- [Agent Communication Protocols](#agent-communication-protocols)
+- [Browser and Computer Use Agents](#browser-and-computer-use-agents)
+- [Agent Tooling and Infrastructure](#agent-tooling-and-infrastructure)
+- [Low and No-Code Builders](#low-and-no-code-builders)
+- [Voice and Multimodal Agents](#voice-and-multimodal-agents)
+- [Safety Guardrails and Observability](#safety-guardrails-and-observability)
+- [Agent Interfaces and UIs](#agent-interfaces-and-uis)
+- [Agent Deployment and Hosting](#agent-deployment-and-hosting)
+- [Agent Evaluation and Benchmarks](#agent-evaluation-and-benchmarks)
+- [Agent Testing & Debugging](#agent-testing--debugging)
+- [Industry-Specific Agents](#industry-specific-agents)
+- [Learning Resources](#learning-resources)
+- [Agent Communication](#agent-communication)
+- [Data Pipeline and Workflow](#data-pipeline-and-workflow)
+- [Secure Execution Environments](#secure-execution-environments)
+- [Creative AI Agents](#creative-ai-agents)
+- [Customer Support and CRM Agents](#customer-support-and-crm-agents)
+- [Voice Agent Platforms](#voice-agent-platforms)
+- [Deep Research Agents](#deep-research-agents)
+- [Prompt-to-App Builders](#prompt-to-app-builders)
+- [Multi-Agent Consumer Platforms](#multi-agent-consumer-platforms)
+- [Open-Source Models for Agents](#open-source-models-for-agents)
+- [Market Stats and Benchmarks 2026](#market-stats-and-benchmarks-2026)
+- [Local and Self-Hosted AI](#local-and-self-hosted-ai)
+- [AI Governance and Compliance](#ai-governance-and-compliance)
+- [Cybersecurity Agents](#cybersecurity-agents)
+- [Healthcare and Therapy Agents](#healthcare-and-therapy-agents)
+- [Newsletters and Communities](#newsletters-and-communities)
+- [Changelog](#changelog)
+- [Star History](#star-history)
 
 ---
 
@@ -41,9 +69,10 @@ Interactive Next.js 14 web application for searching, filtering, and exploring A
 npm install && npm run build:data && npm run dev
 ```
 
-- **Local Web App**: `http://localhost:3000`
-- **Docker**: `docker compose up --build`
-- **One-Click Deploy**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents)
+**Live Web Registry**: [https://ai-agent-registry-kappa.vercel.app](https://ai-agent-registry-kappa.vercel.app/#explorer)  
+**Local Web App**: `http://localhost:3000`  
+**Docker**: `docker compose up --build`  
+**One-Click Deploy**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents-2026#deploy)
 
 ---
 
@@ -372,7 +401,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Finance
 
-- [Anthropic Finance Agents](https://www.anthropic.com) `🚀` `[Cloud]` `[Multi-Agent]` - Domain-specialized agents for earnings analysis and portfolio insight.
+- [Anthropic Finance Agents](https://www.anthropic.com/#finance) `🚀` `[Cloud]` `[Multi-Agent]` - Domain-specialized agents for earnings analysis and portfolio insight.
 - [JPMorgan AlphaBlue](https://www.jpmorgan.com/global) `🚀` `[Cloud]` `[Multi-Agent]` - Trading and market analysis agent integrations for institutional workflows.
 - [Goldman Sachs Marquee AI](https://www.goldmansachs.com) `🚀` `[Cloud]` `[Multi-Agent]` - Market data and analytics agents built on Marquee platform.
 - [Morgan Stanley AdvisorBot](https://www.morganstanley.com) `🚀` `[Cloud]` `[CLI]` - Financial advisory assistant for advisors and retail clients.
@@ -381,7 +410,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Healthcare
 
-- Epic AI Assistant (https://www.epic.com) - Clinical documentation and workflow agents integrated with Epic HER (🏷️ `Cloud` `Healthcare` `Enterprise`).
+- [Epic AI Assistant](https://www.epic.com) `🚀` `[Cloud]` `[Healthcare]` - Clinical documentation and workflow agents integrated with Epic EHR.
 - [Nuance Healthcare AI](https://www.microsoft.com/en-us/health-solutions) `🚀` `[Cloud]` `[CLI]` - Speech and clinical AI solutions for documentation and radiology.
 - [Tempus AI](https://www.tempus.com) `🌱` `[Cloud]` `[CLI]` - Oncology research and clinical decision support agents.
 
@@ -402,9 +431,8 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Government & Compliance
 
-- Anthropic Government Agents - Policy analysis and public sector agents for regulated workflows (🏷️ `Cloud` `Government` `Enterprise`).
+- [Anthropic Government Agents](https://www.anthropic.com/#government) `🚀` `[Cloud]` `[Government]` - Policy analysis and public sector agents for regulated workflows.
 - [Leyna](https://www.atom.com/name/Leyna.ai) `🌱` `[Cloud]` `[Government]` - Public records request agent for government agencies to parse, redact, and track requests.
-- Tax & Insurance Agent Platforms - Generic category placeholder for compliance-focused tax and underwriting agents (🏷️ `Cloud` `Compliance` `Enterprise`).
 
 ## Learning Resources
 
@@ -476,8 +504,7 @@ Infrastructure for running agent-generated code safely in isolated, sandboxed, o
 | AWS Lambda          | Firecracker VM     | ~200ms     | Python, TS, Go         |
 | Cloudflare Workers  | V8 isolate         | ~0ms       | TS, Rust (WebAssembly) |
 
-- agentbox - Docker for AI Agents — package, test, version, and govern AI agents across every framework (🏷️ `Python` `Docker` `CLI`).
-- [agentnotary](https://github.com/CharanBharathula/agentnotary) `🌱` `[Python]` `[CLI]` - Notarize, govern, and audit AI agents — cryptographic seal, runtime guard, EU AI Act docs, and adversarial fuzzer.
+- [agentnotary](https://github.com/CharanBharathula/agentnotary) `🌱` `[Python]` `[CLI]` - Notarize, govern, and audit AI agents with cryptographic seals, runtime guards, and adversarial fuzzing.
 - [AWS Lambda](https://github.com/aws/aws-lambda-python-runtime-interface-client) `🚀` `[Python]` `[Serverless]` - Serverless function runtime with Firecracker isolation for executing short-lived agent tasks at scale.
 - [Cloudflare Workers](https://github.com/cloudflare/workers-sdk) `🌱` `[TypeScript]` `[Serverless]` - Ultra-low-latency V8-isolate serverless runtime at the edge for lightweight agent task execution.
 - [CodeSandbox SDK](https://github.com/codesandbox/codesandbox-sdk) `🌱` `[TypeScript]` `[IDE]` - Provides forked, snapshotted microVM environments for real-time collaborative agent code execution.
@@ -608,7 +635,7 @@ Platforms for building, deploying, and scaling voice-based AI agents across call
 | Bland AI   | Medium  | Yes   | Outbound call automation |
 | PolyAI     | Low     | Yes   | Enterprise scale         |
 
-- [AgentLine](https://agentline.cloud/) `🌱` `[Cloud]` `[Pipeline]` - Telephony infrastructure for AI agents — provision phone numbers, make/receive calls, and manage voice pipelines via API.
+- [AgentLine](https://agentline.cloud/) `🌱` `[Cloud]` `[Pipeline]` - Telephony infrastructure for AI agents to provision phone numbers, make or receive calls, and manage voice pipelines via API.
 - [AssemblyAI](https://www.assemblyai.com) `🌱` `[Cloud]` `[Pipeline]` - Speech-to-text API with speaker diarization, sentiment analysis, and summarization for voice agent pipelines.
 - [Bland AI](https://www.bland.ai/) `🌱` `[Cloud]` `[Voice]` - Automates outbound phone calls at scale with SOC2 and HIPAA compliance and CRM integration.
 - [Deepgram](https://deepgram.com) `🌱` `[Cloud]` `[Pipeline]` - Sub-300ms speech-to-text and text-to-speech APIs purpose-built for real-time voice agent pipelines.

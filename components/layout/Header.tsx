@@ -66,7 +66,7 @@ export function Header({ onOpenSearch }: HeaderProps) {
           )}
 
           <a
-            href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents"
+            href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-muted-foreground hover:text-foreground transition-colors rounded hover:bg-accent"

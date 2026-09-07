@@ -94,7 +94,7 @@ function ExploreContent() {
           </div>
 
           <a
-            href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents"
+            href="https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded border border-border bg-card hover:bg-accent text-xs font-mono text-foreground transition-colors shrink-0"
