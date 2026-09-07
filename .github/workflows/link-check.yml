@@ -27,13 +27,18 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --accept 200,204,301,302,308,403,429
+            --accept 200,204,301,302,307,308,403,429
             --exclude-path node_modules
             --exclude "star-history.com"
             --exclude "shields.io"
             --exclude "stableaudio.com"
             --exclude "mckinsey.com"
             --exclude "servicenow.com"
+            --exclude "agentage.io"
+            --exclude "agentwork-api.yfoob.chatgpt.site"
+            --exclude "theagentsindex.com"
+            --exclude "notfair.co"
+            --exclude "lexisnexis.com"
             --timeout 30
             README.md
           fail: true

@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-09-06T10:21:32.669Z",
+  "source": "README.md",
+  "totalCategories": 31,
+  "categories": [
+    {
+      "name": "Orchestration Frameworks",
+      "slug": "orchestration-frameworks",
+      "count": 31
+    },
+    {
+      "name": "Coding Agents",
+      "slug": "coding-agents",
+      "count": 35
+    },
+    {
+      "name": "Memory and Context",
+      "slug": "memory-and-context",
+      "count": 30
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "slug": "multi-agent-systems",
+      "count": 10
+    },
+    {
+      "name": "Agent Communication Protocols",
+      "slug": "agent-communication-protocols",
+      "count": 17
+    },
+    {
+      "name": "Browser and Computer Use Agents",
+      "slug": "browser-and-computer-use-agents",
+      "count": 16
+    },
+    {
+      "name": "Agent Tooling and Infrastructure",
+      "slug": "agent-tooling-and-infrastructure",
+      "count": 22
+    },
+    {
+      "name": "Low and No-Code Builders",
+      "slug": "low-and-no-code-builders",
+      "count": 16
+    },
+    {
+      "name": "Voice and Multimodal Agents",
+      "slug": "voice-and-multimodal-agents",
+      "count": 12
+    },
+    {
+      "name": "Safety Guardrails and Observability",
+      "slug": "safety-guardrails-and-observability",
+      "count": 31
+    },
+    {
+      "name": "Agent Interfaces and UIs",
+      "slug": "agent-interfaces-and-uis",
+      "count": 12
+    },
+    {
+      "name": "Agent Deployment and Hosting",
+      "slug": "agent-deployment-and-hosting",
+      "count": 9
+    },
+    {
+      "name": "Agent Evaluation and Benchmarks",
+      "slug": "agent-evaluation-and-benchmarks",
+      "count": 7
+    },
+    {
+      "name": "Industry-Specific Agents",
+      "slug": "industry-specific-agents",
+      "count": 14
+    },
+    {
+      "name": "Learning Resources",
+      "slug": "learning-resources",
+      "count": 17
+    },
+    {
+      "name": "Agent Communication",
+      "slug": "agent-communication",
+      "count": 9
+    },
+    {
+      "name": "Data Pipeline and Workflow",
+      "slug": "data-pipeline-and-workflow",
+      "count": 12
+    },
+    {
+      "name": "Secure Execution Environments",
+      "slug": "secure-execution-environments",
+      "count": 12
+    },
+    {
+      "name": "Creative AI Agents",
+      "slug": "creative-ai-agents",
+      "count": 29
+    },
+    {
+      "name": "Customer Support and CRM Agents",
+      "slug": "customer-support-and-crm-agents",
+      "count": 24
+    },
+    {
+      "name": "Voice Agent Platforms",
+      "slug": "voice-agent-platforms",
+      "count": 13
+    },
+    {
+      "name": "Deep Research Agents",
+      "slug": "deep-research-agents",
+      "count": 8
+    },
+    {
+      "name": "Prompt-to-App Builders",
+      "slug": "prompt-to-app-builders",
+      "count": 8
+    },
+    {
+      "name": "Multi-Agent Consumer Platforms",
+      "slug": "multi-agent-consumer-platforms",
+      "count": 8
+    },
+    {
+      "name": "Open-Source Models for Agents",
+      "slug": "open-source-models-for-agents",
+      "count": 16
+    },
+    {
+      "name": "Market Stats and Benchmarks 2026",
+      "slug": "market-stats-and-benchmarks-2026",
+      "count": 2
+    },
+    {
+      "name": "Local and Self-Hosted AI",
+      "slug": "local-and-self-hosted-ai",
+      "count": 11
+    },
+    {
+      "name": "AI Governance and Compliance",
+      "slug": "ai-governance-and-compliance",
+      "count": 7
+    },
+    {
+      "name": "Cybersecurity Agents",
+      "slug": "cybersecurity-agents",
+      "count": 4
+    },
+    {
+      "name": "Healthcare and Therapy Agents",
+      "slug": "healthcare-and-therapy-agents",
+      "count": 10
+    },
+    {
+      "name": "Newsletters and Communities",
+      "slug": "newsletters-and-communities",
+      "count": 9
+    }
+  ]
+}

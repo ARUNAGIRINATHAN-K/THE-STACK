@@ -73,19 +73,19 @@ Priority order when multiple tags could apply: `MCP` > `RAG` > framework (LangCh
 
 ```markdown
 # Wrong: missing tier, language, and type tags (old format)
-- [CrewAI](https://github.com/crewAIInc/crewAI) - Production multi-agent framework (🏷️ `Python` `LangChain` `SDK`).
+- [ToolA](https://github.com/example/bad-entry-1) - Production multi-agent framework (🏷️ `Python` `LangChain` `SDK`).
 
 # Wrong: em-dash instead of hyphen-space after closing tag
-- [Mastra](https://github.com/mastra-ai/mastra) `🌱` `[TypeScript]` `[MCP]` — Opinionated TypeScript framework.
+- [ToolB](https://github.com/example/bad-entry-2) `🌱` `[TypeScript]` `[MCP]` — Opinionated TypeScript framework.
 
 # Wrong: multiple sentences
-- [Modus](https://github.com/hypermodeinc/modus) `🔬` `[WebAssembly]` `[Serverless]` - Serverless framework. It has minimal cold starts.
+- [ToolC](https://github.com/example/bad-entry-3) `🔬` `[WebAssembly]` `[Serverless]` - Serverless framework. It has minimal cold starts.
 
 # Wrong: promotional language
-- [SomeTool](https://example.com) `🚀` `[Python]` `[Multi-Agent]` - The most powerful and revolutionary AI framework ever built.
+- [ToolD](https://github.com/example/bad-entry-4) `🚀` `[Python]` `[Multi-Agent]` - The most powerful and revolutionary AI framework ever built.
 
 # Wrong: tier badge missing brackets around language/type
-- [SomeTool](https://example.com) `🌱` `Python` `Multi-Agent` - Does something useful.
+- [ToolE](https://github.com/example/bad-entry-5) `🌱` `Python` `Multi-Agent` - Does something useful.
 ```
 
 ---
@@ -151,7 +151,28 @@ Current categories:
 3. **Verify** the link works, your entry follows the format above, and the URL does not already appear elsewhere in the list
 4. **Submit** a pull request with a clear title: `Add [Tool Name] to [Category]`
 
-The maintainers will review your PR within a few days. We may suggest edits to the description, tier, tags, or category.
+> [!NOTE]
+> **Vercel Preview Check Status**: If you see a Vercel check indicating `Authorization required to deploy` on your PR, this is a standard Vercel security policy for repository forks. GitHub Actions (`awesome-lint` & `npm run build`) automatically validates your PR code and dataset formatting. Maintainers will review and merge your PR directly.
+
+## Web Application & Dataset Build
+
+The repository includes an interactive Next.js 14 web application for searching, filtering, and exploring the registry.
+
+When adding or updating entries in `README.md`, recompile the static dataset and test the web app:
+
+```bash
+# 1. Compile README.md into static normalized JSON datasets
+npm run build:data
+
+# 2. Start Next.js development server
+npm run dev
+
+# 3. Validate production build
+npm run build
+
+# 4. (Optional) Test containerized build
+docker compose up --build
+```
 
 ---
 

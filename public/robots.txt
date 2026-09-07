@@ -1,0 +1,3 @@
+# Robots.txt for Awesome AI Agents Registry
+User-agent: *
+Allow: /
