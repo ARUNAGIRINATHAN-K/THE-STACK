@@ -406,7 +406,6 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 - [Anthropic Government Agents](https://www.anthropic.com) `🚀` `[Cloud]` `[Government]` - Policy analysis and public sector agents for regulated workflows.
 - [Leyna](https://www.atom.com/name/Leyna.ai) `🌱` `[Cloud]` `[Government]` - Public records request agent for government agencies to parse, redact, and track requests.
-- [Tax & Insurance Agent Platforms](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026) `🌱` `[Cloud]` `[Compliance]` - Compliance-focused tax and underwriting agents for regulated industries.
 
 ## Learning Resources
 
