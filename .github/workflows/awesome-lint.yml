@@ -31,6 +31,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Validate dataset compilation & Next.js build
+        run: npm run build
+
       - name: Run awesome-lint
         run: npx awesome-lint
         env:

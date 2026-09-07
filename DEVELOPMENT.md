@@ -107,10 +107,19 @@ The project is pre-configured for instant automated deployments via **Vercel + G
    - **Framework Preset**: `Next.js`
    - **Build Command**: `npm run build` *(runs `node scripts/build-data.js && next build` automatically)*
    - **Output Directory**: `.next`
-4. **Deploy**: Click **Deploy**. Vercel will build the project and issue a live URL (e.g. `https://awesome-ai-agents.vercel.app`).
+4. **Deploy**: Click **Deploy**. Vercel will build the project and issue a live URL (e.g. [https://ai-agent-registry-kappa.vercel.app](https://ai-agent-registry-kappa.vercel.app/)).
 
 > [!NOTE]
 > **Continuous Delivery**: Any future `git push` to `main` or merged Pull Request automatically triggers Vercel to rebuild the dataset from `README.md` and deploy the updated application globally. Every Pull Request gets an isolated preview environment.
+
+#### Resolving "Authorization required to deploy" for Contributor PRs
+
+When external contributors submit a Pull Request from a repository fork, Vercel displays `Authorization required to deploy` by default to protect project build quotas.
+
+**How to Fix (Vercel Project Settings)**:
+1. Open [Vercel Dashboard](https://vercel.com/dashboard) → Select your project → **Settings** → **Git**.
+2. Under **Vercel for GitHub** / **Fork Protection**, set **"Require authorization for PRs from forks"** to **Disabled** (or select **"Automatically deploy Pull Requests from forks"**).
+3. Alternatively, GitHub Actions CI (`awesome-lint.yml`) automatically executes `npm run build` on every PR from forks, ensuring PR correctness even before Vercel authorization.
 
 ### Option B: Docker Setup & Deployment
 
