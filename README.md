@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/ARUNAGIRINATHAN-K/awesome-ai-agents-2026?style=social)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 [![Last Commit](https://img.shields.io/github/last-commit/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/commits/main)
-[![Tools Listed](https://img.shields.io/badge/tools_listed-470%2B-blue?style=flat-square)](#ai-registry-explorer)
+![Tools Listed](https://img.shields.io/badge/tools_listed-470%2B-blue?style=flat-square)
 [![Live Registry](https://img.shields.io/website?url=https%3A%2F%2Fai-agent-registry-kappa.vercel.app%2F&up_message=online&label=registry&style=flat-square)](https://ai-agent-registry-kappa.vercel.app/)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](LICENSE)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents-2026)
@@ -55,6 +55,8 @@
 - [Cybersecurity Agents](#cybersecurity-agents)
 - [Healthcare and Therapy Agents](#healthcare-and-therapy-agents)
 - [Newsletters and Communities](#newsletters-and-communities)
+- [Changelog](#changelog)
+- [Star History](#star-history)
 
 ---
 
