@@ -8,28 +8,56 @@
 [![GitHub stars](https://img.shields.io/github/stars/ARUNAGIRINATHAN-K/awesome-ai-agents-2026?style=social)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 [![Last Commit](https://img.shields.io/github/last-commit/ARUNAGIRINATHAN-K/awesome-ai-agents-2026)](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/commits/main)
-[![Tools Listed](https://img.shields.io/badge/tools_listed-470%2B-blue?style=flat-square)](https://ai-agent-registry-kappa.vercel.app/)
+[![Tools Listed](https://img.shields.io/badge/tools_listed-470%2B-blue?style=flat-square)](#contents)
 [![Live Registry](https://img.shields.io/website?url=https%3A%2F%2Fai-agent-registry-kappa.vercel.app%2F&up_message=online&label=registry&style=flat-square)](https://ai-agent-registry-kappa.vercel.app/)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](LICENSE)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents-2026)
 
 *The most comprehensive, structured guide to AI agent frameworks, tools, and resources.*  
 *Updated weekly. Compared side-by-side. Built for developers who ship.*
 
-**[Explore the Stack](#contents) • [Live App](https://ai-agent-registry-kappa.vercel.app/) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](#contributing) • [Agent Guide](AGENT.md)**
+**[Explore the Stack](#contents) • [Live App](https://ai-agent-registry-kappa.vercel.app/#live) • [Architecture](ARCHITECTURE.md) • [Data Schema](DATA_SCHEMA.md) • [Development](DEVELOPMENT.md) • [Contributing](#contributing) • [Agent Guide](AGENT.md)**
 
 </div>
 
 ## Contents
 
-| | | | | | |
-|---|---|---|---|---|---|
-| [Orchestration Frameworks](#orchestration-frameworks) | [Coding Agents](#coding-agents) | [Memory and Context](#memory-and-context) | [Multi-Agent Systems](#multi-agent-systems) | [Agent Communication Protocols](#agent-communication-protocols) | [Browser and Computer Use Agents](#browser-and-computer-use-agents) |
-| [Agent Tooling and Infrastructure](#agent-tooling-and-infrastructure) | [Low and No-Code Builders](#low-and-no-code-builders) | [Voice and Multimodal Agents](#voice-and-multimodal-agents) | [Safety Guardrails and Observability](#safety-guardrails-and-observability) | [Agent Interfaces and UIs](#agent-interfaces-and-uis) | [Agent Deployment and Hosting](#agent-deployment-and-hosting) |
-| [Agent Evaluation and Benchmarks](#agent-evaluation-and-benchmarks) | [Agent Testing & Debugging](#agent-testing--debugging) | [Industry-Specific Agents](#industry-specific-agents) | [Learning Resources](#learning-resources) | [Agent Communication](#agent-communication) | [Data Pipeline and Workflow](#data-pipeline-and-workflow) |
-| [Secure Execution Environments](#secure-execution-environments) | [Creative AI Agents](#creative-ai-agents) | [Customer Support and CRM Agents](#customer-support-and-crm-agents) | [Voice Agent Platforms](#voice-agent-platforms) | [Deep Research Agents](#deep-research-agents) | [Prompt-to-App Builders](#prompt-to-app-builders) |
-| [Multi-Agent Consumer Platforms](#multi-agent-consumer-platforms) | [Open-Source Models for Agents](#open-source-models-for-agents) | [Market Stats and Benchmarks 2026](#market-stats-and-benchmarks-2026) | [Local and Self-Hosted AI](#local-and-self-hosted-ai) | [AI Governance and Compliance](#ai-governance-and-compliance) | [Cybersecurity Agents](#cybersecurity-agents) |
-| [Healthcare and Therapy Agents](#healthcare-and-therapy-agents) | [Newsletters and Communities](#newsletters-and-communities) | [Experience Intent Libraries](#experience-intent-libraries) | [Interactive Web Application](#interactive-web-application) | [Changelog](#changelog) | [Star History](#star-history) |
+- [AI Registry Explorer](#ai-registry-explorer)
+- [Orchestration Frameworks](#orchestration-frameworks)
+- [Coding Agents](#coding-agents)
+- [Memory and Context](#memory-and-context)
+- [Multi-Agent Systems](#multi-agent-systems)
+- [Agent Communication Protocols](#agent-communication-protocols)
+- [Browser and Computer Use Agents](#browser-and-computer-use-agents)
+- [Agent Tooling and Infrastructure](#agent-tooling-and-infrastructure)
+- [Low and No-Code Builders](#low-and-no-code-builders)
+- [Voice and Multimodal Agents](#voice-and-multimodal-agents)
+- [Safety Guardrails and Observability](#safety-guardrails-and-observability)
+- [Agent Interfaces and UIs](#agent-interfaces-and-uis)
+- [Agent Deployment and Hosting](#agent-deployment-and-hosting)
+- [Agent Evaluation and Benchmarks](#agent-evaluation-and-benchmarks)
+- [Agent Testing & Debugging](#agent-testing--debugging)
+- [Industry-Specific Agents](#industry-specific-agents)
+- [Learning Resources](#learning-resources)
+- [Agent Communication](#agent-communication)
+- [Data Pipeline and Workflow](#data-pipeline-and-workflow)
+- [Secure Execution Environments](#secure-execution-environments)
+- [Creative AI Agents](#creative-ai-agents)
+- [Customer Support and CRM Agents](#customer-support-and-crm-agents)
+- [Voice Agent Platforms](#voice-agent-platforms)
+- [Deep Research Agents](#deep-research-agents)
+- [Prompt-to-App Builders](#prompt-to-app-builders)
+- [Multi-Agent Consumer Platforms](#multi-agent-consumer-platforms)
+- [Open-Source Models for Agents](#open-source-models-for-agents)
+- [Market Stats and Benchmarks 2026](#market-stats-and-benchmarks-2026)
+- [Local and Self-Hosted AI](#local-and-self-hosted-ai)
+- [AI Governance and Compliance](#ai-governance-and-compliance)
+- [Cybersecurity Agents](#cybersecurity-agents)
+- [Healthcare and Therapy Agents](#healthcare-and-therapy-agents)
+- [Newsletters and Communities](#newsletters-and-communities)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
+- [Star History](#star-history)
 
 ---
 
@@ -42,10 +70,10 @@ Interactive Next.js 14 web application for searching, filtering, and exploring A
 npm install && npm run build:data && npm run dev
 ```
 
-**Live Web Registry**: [https://ai-agent-registry-kappa.vercel.app](https://ai-agent-registry-kappa.vercel.app/)  
+**Live Web Registry**: [https://ai-agent-registry-kappa.vercel.app](https://ai-agent-registry-kappa.vercel.app/#explorer)  
 **Local Web App**: `http://localhost:3000`  
 **Docker**: `docker compose up --build`  
-**One-Click Deploy**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents)
+**One-Click Deploy**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FARUNAGIRINATHAN-K%2Fawesome-ai-agents-2026#deploy)
 
 ---
 
@@ -374,7 +402,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Finance
 
-- [Anthropic Finance Agents](https://www.anthropic.com) `🚀` `[Cloud]` `[Multi-Agent]` - Domain-specialized agents for earnings analysis and portfolio insight.
+- [Anthropic Finance Agents](https://www.anthropic.com/#finance) `🚀` `[Cloud]` `[Multi-Agent]` - Domain-specialized agents for earnings analysis and portfolio insight.
 - [JPMorgan AlphaBlue](https://www.jpmorgan.com/global) `🚀` `[Cloud]` `[Multi-Agent]` - Trading and market analysis agent integrations for institutional workflows.
 - [Goldman Sachs Marquee AI](https://www.goldmansachs.com) `🚀` `[Cloud]` `[Multi-Agent]` - Market data and analytics agents built on Marquee platform.
 - [Morgan Stanley AdvisorBot](https://www.morganstanley.com) `🚀` `[Cloud]` `[CLI]` - Financial advisory assistant for advisors and retail clients.
@@ -404,7 +432,7 @@ Curated list of vertical agent solutions for finance, healthcare, legal, manufac
 
 ### Government & Compliance
 
-- [Anthropic Government Agents](https://www.anthropic.com) `🚀` `[Cloud]` `[Government]` - Policy analysis and public sector agents for regulated workflows.
+- [Anthropic Government Agents](https://www.anthropic.com/#government) `🚀` `[Cloud]` `[Government]` - Policy analysis and public sector agents for regulated workflows.
 - [Leyna](https://www.atom.com/name/Leyna.ai) `🌱` `[Cloud]` `[Government]` - Public records request agent for government agencies to parse, redact, and track requests.
 
 ## Learning Resources
